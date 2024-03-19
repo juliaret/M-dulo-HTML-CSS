@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+header {
+  background-color: white;
+}
+
+header div {
+  text-align: right;
+}
+
+header nav {
+  text-align: right;
+  background-color: brown;
+  padding-right: 60px;
+}
+
+header nav a {
+  color: white;
+  padding: 15px;
+  display: inline-block;
+  border-right: 1px solid white;
+}
+
+header nav a:hover {
+  background-color: white;
+  color: brown;
+}
+
+nav a:nth-child(1) {
+  border-left: 1px solid white;
+}
+
+.red-social {
+  width: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#foto-grande {
+  width: 100%;
+}
+
+.contenedor {
+  background-color: brown;
+  color: white;
+  margin: 50px auto;
+  padding: 20px 40px;
+}
+
+.contenedor * {
+  margin: 15px 0;
+}
+
+.seccion-50 {
+  width: 50%;
+}
+
+.seccion-50 h2 {
+  text-align: center;
+}
+
+.productos {
+  text-align: center;
+}
+
+.productos img {
+  width: 25%;
+  margin: 20px;
+}
+
+.localizacion h2 {
+  text-align: right;
+}
+
+iframe {
+  width: 100%;
+}
+
+.capital::first-letter {
+  font-size: 50px;
+}
+
+.principal::first-line {
+  text-decoration: underline;
+}
