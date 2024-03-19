@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+#foto-grande {
+  width: 100%;
+}
+
+body {
+  background-color: bisque;
+  color: saddlebrown;
+}
+
+header {
+  background-color: rgb(250, 250, 250);
+  padding: 10px 20px;
+}
+
+header nav {
+  background-color: hotpink;
+  text-align: right;
+}
+
+header nav a {
+  color: white;
+  padding: 10px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+header nav a:hover {
+  background-color: white;
+  color: hotpink;
+}
+
+section {
+  max-width: 60%;
+  margin: 50px auto;
+}
+
+section * {
+  margin: 10px 0;
+}
+
+.apartado1 {
+  padding: 50px;
+  background-color: white;
+}
+
+.apartado2 {
+  padding: 50px;
+  background-color: white;
+}
+
+.apartado3 {
+  padding: 50px;
+  background-color: white;
+}
+
+.apartado3 a {
+  background-color: hotpink;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.apartado3 img {
+  width: 49%;
+}
+
+.apartado3 a:hover {
+  background-color: lavenderblush;
+  color: hotpink;
+}
+
+footer {
+  background-color: rgb(250, 250, 250);
+  padding: 5px 200px 20px 200px;
+}
+
+footer nav {
+  text-align: right;
+}
+
+footer nav a {
+  color: hotpink;
+  padding: 10px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+footer img {
+  vertical-align: middle;
+}

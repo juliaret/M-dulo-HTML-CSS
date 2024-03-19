@@ -1,0 +1,34 @@
+/*selector por ID*/
+p {
+  color: red;
+}
+
+h2 {
+  background-color: orange;
+}
+
+p,
+h2 {
+  color: red;
+}
+
+div > span {
+  background-color: chartreuse;
+}
+
+/*selector por ID*/
+#titulo1 {
+  color: darkorchid;
+}
+
+/*selector por clase*/
+.producto {
+  width: 50%;
+}
+
+.fondo {
+  background-color: grey;
+}
+
+div.fondo {
+}
