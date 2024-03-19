@@ -1,2 +1,2 @@
 # Modulo-HTML-CSS
-Máster Trazos 2024
+Master Trazos 2024
