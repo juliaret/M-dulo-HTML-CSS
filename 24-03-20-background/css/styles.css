@@ -23,7 +23,7 @@ h1 {
   background: url(../images/foto1.png);
   padding: 150px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; /*para que la imagen ocupe todo el ancho de pantalla*/
   /*background-attachment: fixed; para hacer un efecto de parallax dejando la imagen fija*/
   background-position: bottom; /*para que se vea la parte de abajo de una imagen si es muy grande y se recorta*/
 }
