@@ -1,0 +1,68 @@
+/*Selección por atributo*/
+
+a[href="https://elpais.com/"]
+{
+  background-color: brown;
+}
+
+[title="pais"] {
+  border: 2px solid violet;
+}
+
+[title="pais"]::before {
+  content: "<<";
+  color: yellow;
+}
+
+[title="pais"]::after {
+  content: ">>";
+  color: yellow;
+}
+
+[title^="p"] {
+  border: 3px solid green;
+}
+
+input {
+  background-color: blanchedalmond;
+  padding: 5px;
+  color: crimson;
+}
+
+[type="text"] {
+  background-color: azure;
+}
+
+[type="text"]:focus {
+  background-color: burlywood;
+}
+
+input::placeholder {
+  color: blue;
+}
+
+section:first-child {
+  background-color: chocolate;
+}
+
+section:nth-child(3) {
+  background-color: chocolate;
+}
+
+ul li:nth-child(4) {
+  background-color: yellow;
+}
+
+[alt="leon"]:hover {
+  content: url(../images/lobo.avif);
+}
+
+/*Esto se suele hacer para cuando se imprime la hoja de estilos*/
+[title="mundo"]::after {
+  content: ":" attr(href);
+}
+
+section div:first-child h2::first-letter {
+  font-size: 50px;
+  color: red;
+}

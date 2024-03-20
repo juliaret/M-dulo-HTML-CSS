@@ -1,0 +1,29 @@
+body {
+  background: url(../images/pattern.jpeg),
+    linear-gradient(
+      100deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 0.29177608543417366) 100%
+    ),
+    url(../images/pattern.jpeg);
+  background-repeat: no-repeat, repeat, repeat;
+}
+
+h1 {
+  color: rgb(167, 25, 96);
+  width: 50%;
+  padding: 20px;
+  background-color: rgba(0, 255, 255, 0.652);
+}
+
+#banner1 {
+  width: 80%;
+  margin: 50px auto;
+  background: url(../images/foto1.png);
+  padding: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed; para hacer un efecto de parallax dejando la imagen fija*/
+  background-position: bottom; /*para que se vea la parte de abajo de una imagen si es muy grande y se recorta*/
+}
