@@ -1,0 +1,13 @@
+Fonts used in this design:
+
+Font: Devroye
+Author: Apostrophic Labs
+Url: http://www.fontsquirrel.com/fonts/devroye
+
+Font: Metropolis
+Author: Chris Simpson
+Url: https://www.fontsquirrel.com/fonts/metropolis
+
+Font: Amagro
+Author: Fabio Servolo
+Url: https://www.fontsquirrel.com/fonts/amagro

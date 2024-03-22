@@ -1,0 +1,65 @@
+#horario {
+  border: 1px solid black;
+  border-collapse: collapse; /*Esto sirve para que dos bordes que estén contiguos se agrupen en uno. Ejemplo: que el borde de la tabla se junte con el de las celdas*/
+  width: 100%;
+  text-align: center;
+}
+
+tr {
+  height: 60px;
+}
+
+tr:first-child {
+  background-color: darkmagenta;
+  color: white;
+}
+
+tr td:first-child {
+  background-color: darkmagenta;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+.matematicas {
+  background-color: cadetblue;
+}
+
+.etica {
+  background-color: aquamarine;
+}
+
+.fisica {
+  background-color: mediumseagreen;
+}
+
+.lengua {
+  background-color: blanchedalmond;
+}
+
+.ingles {
+  background-color: aqua;
+}
+
+.filosofia {
+  background-color: mediumpurple;
+}
+
+.sociales {
+  background-color: hotpink;
+}
+
+.quimica {
+  background-color: chartreuse;
+}
+
+.ed-fisica {
+  background-color: coral;
+}
+
+.descanso {
+  background-color: gold;
+}

@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+
+/*SECCIÓN 1 CON IMAGEN DE FONDO*/
+
+.imagen-fondo {
+  background-image: url(../images/foto-fondo-cabecera.png);
+}
