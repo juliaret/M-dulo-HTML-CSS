@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid darkolivegreen;
+}
+
+nav {
+  background-color: darkolivegreen;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+}
+
+nav a:hover {
+  background-color: black;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn a {
+  background-color: darkolivegreen;
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 20px 0;
+}
+
+.btn a:hover {
+  background-color: black;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.contenedor-80 {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.contenedor-60 {
+  width: 60%;
+  margin: 100px auto;
+}
+
+.dflex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.ancho-33 {
+  width: 33.33%;
+}
+
+.ancho-40 {
+  width: 40%;
+}
+
+.ancho-60 {
+  width: 60%;
+}
+
+.ancho-100 {
+  width: 100%;
+}
+
+section > div {
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: darkolivegreen;
+}
+
+footer a img {
+  width: 40px;
+}
+
+footer a {
+  color: white;
+  margin: 10px;
+}

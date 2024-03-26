@@ -17,3 +17,12 @@ img {
   display: flex;
   gap: 30px;
 }
+
+section div.flex {
+  margin: 20px auto;
+  align-items: center;
+}
+
+section div.flex div {
+  width: 50%;
+}
