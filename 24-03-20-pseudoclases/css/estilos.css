@@ -23,8 +23,11 @@ a[href="https://elpais.com/"]
   border: 3px solid green;
 }
 
+
+/*FORMULARIO*/
+
 input {
-  background-color: blanchedalmond;
+  background-color:hotpink;
   padding: 5px;
   color: crimson;
 }
