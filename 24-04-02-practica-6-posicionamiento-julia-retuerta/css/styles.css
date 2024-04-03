@@ -1,7 +1,12 @@
+/*TODO*/
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
 }
 
 img {
@@ -10,4 +15,140 @@ img {
 
 a {
   text-decoration: none;
+}
+
+/*HEADER*/
+header {
+  background-color: #0a1551;
+  height: 100%;
+  width: 300px;
+  text-align: center;
+  position: fixed;
+}
+
+nav a {
+  background-color: #e89346;
+  color: #0a1551;
+  font-weight: 500;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #1e94e6;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav ul li ul a {
+  background-color: #ffc792;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+.derecha {
+  margin-left: 300px;
+}
+
+/*REDES SOCIALES*/
+.rrss {
+  background-color: tomato;
+  padding: 0 10px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+}
+
+.rrss a {
+  color: white;
+  display: block;
+  margin: 12px 0;
+  font-size: 1.5em;
+}
+
+.rrss a:hover {
+  color: #0a1551;
+}
+
+/*FLECHA*/
+.flecha a {
+  font-size: 3em;
+  color: #1e94e6;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+}
+
+.flecha a:hover {
+  color: #0a1551;
+}
+
+/*SECCIONES*/
+.col-6 {
+  width: 50%;
+  padding: 20px;
+}
+
+.col-12 {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 80%;
+  margin: 60px auto;
+}
+
+h2 {
+  text-align: center;
+  color: #0a1551;
+}
+
+/*PÁRRAFO*/
+
+.card {
+  position: relative;
+  cursor: pointer; /*Cursor en forma de mano*/
+  overflow: hidden; /*Por si se desborda, para que no se vea ese desbordamiento*/
+}
+
+.card img {
+  display: block;
+  width: 100%;
+}
+
+.card:hover p {
+  display: block; /*Para que no salga el filo azul de abajo*/
+}
+
+.card p {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #005693a9;
+  color: white;
+  font-weight: 500;
+  align-content: center;
+  padding: 0 50px;
+  display: none;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #e89346;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
 }

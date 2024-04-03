@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(154, 119, 186);
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: rgb(144, 231, 202);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: darkolivegreen;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: rgb(217, 132, 174);
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: cadetblue;
+  }
+}
+
+@media (min-width: 1400px) {
+}
