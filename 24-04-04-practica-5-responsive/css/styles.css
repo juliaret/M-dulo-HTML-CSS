@@ -1,0 +1,229 @@
+/*TODO*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6em;
+  font-weight: 500;
+  color: #3a3e43;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 5px solid #3c639c;
+}
+
+nav a {
+  padding: 15px 20px;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #3c639c;
+}
+
+nav a:hover {
+  background-color: #3c639c;
+  color: white;
+}
+
+/*FLEX*/
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/*SECCIÓN*/
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.fondo {
+  background-color: #64aed9;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/*COLUMNAS*/
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  padding: 1.5em;
+}
+
+/*ICONOS*/
+
+.icon {
+  font-size: 2em;
+}
+
+/*BOTÓN*/
+
+.btn {
+  border: 2px solid #3c639c;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 15px;
+  border-radius: 20px;
+  background-color: #64aed9;
+}
+
+.btn a {
+  color: white;
+}
+
+/*FOOTER*/
+
+.rrss {
+  background-color: #6a6f75;
+  padding: 40px 0;
+}
+
+.rrss a {
+  font-size: 2em;
+  padding: 0 0.8em;
+  color: white;
+}
+
+.rrss a:hover {
+  color: #64aed9;
+}
+
+footer {
+  text-align: center;
+}
+
+.avisos {
+  justify-content: space-around;
+}
+
+.bottom {
+  background-color: #3a3e43;
+  color: white;
+  font-weight: 400;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  nav {
+    margin-bottom: 20px;
+  }
+
+  .listado-2 {
+    display: none;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+
+  .col-4 {
+    width: 50%;
+  }
+
+  footer .col-6 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .listado-1 {
+    display: none;
+  }
+
+  .col-8 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  nav a {
+    display: block;
+  }
+
+  .col-3 {
+    width: 100%;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .galeria {
+    display: none;
+  }
+}
