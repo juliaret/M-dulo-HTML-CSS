@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+.azul {
+  background-color: aqua;
+}
+
+.rosa {
+  background-color: lightpink;
+}
+
+.verde {
+  background-color: darkseagreen;
+}
+
+.naranja {
+  background-color: coral;
+}
+
+div {
+  border: 2px solid white;
+  height: 100px;
+}
