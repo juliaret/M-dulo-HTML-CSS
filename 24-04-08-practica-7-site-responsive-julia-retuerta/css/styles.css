@@ -2,6 +2,34 @@ img {
   max-width: 100%;
 }
 
-img {
-  width: 100%;
+a {
+  text-decoration: none;
+}
+
+.rrss a {
+  color: black;
+  font-size: 1.5em;
+  padding: 8px;
+}
+
+/*@MEDIA*/
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .rrss {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+
+  .rrss a {
+    display: block;
+  }
 }
