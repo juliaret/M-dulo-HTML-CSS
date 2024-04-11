@@ -1,3 +1,5 @@
+/*TODO*/
+
 img {
   max-width: 100%;
 }
@@ -6,10 +8,77 @@ a {
   text-decoration: none;
 }
 
-.rrss a {
+/*HEADER*/
+
+header {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.rrss a i {
   color: black;
-  font-size: 1.5em;
-  padding: 8px;
+  font-size: 1.6em;
+  padding: 3.5px 10px;
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 50px;
+  margin: 8px;
+  display: inline-block;
+}
+
+.rrss a i:hover {
+  color: white;
+  background-color: black;
+}
+
+nav {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+nav a {
+  color: black;
+  border: 1.5px solid black;
+  padding: 18px;
+  margin: 15px;
+}
+
+nav a:hover,
+.active {
+  background-color: black;
+  color: white;
+}
+
+[class*='col-'] {
+  padding: 20px;
+}
+
+.boton {
+  text-align: center;
+}
+
+.boton a {
+  color: black;
+  background-color: white;
+  border: 1.5px solid black;
+  padding: 14px 50px;
+  display: inline-block;
+}
+
+.boton a:hover {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.bg {
+  background-color: rgb(208, 199, 187);
+}
+
+footer {
+  background-color: #2d2d2d;
+  color: white;
+  text-align: center;
 }
 
 /*@MEDIA*/
@@ -17,19 +86,41 @@ a {
 }
 
 @media (min-width: 768px) {
+  nav {
+    padding: 30px;
+  }
+
+  nav a {
+    padding: 18px 35px;
+    margin: 7px;
+  }
 }
 
 @media (min-width: 992px) {
+  nav a {
+    padding: 18px 45px;
+    margin: 15px 20px;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .rrss a i {
+    margin: 4px;
+  }
 }
 
 @media (min-width: 1200px) {
-  .rrss {
-    position: absolute;
-    top: 30px;
+  header .rrss {
+    position: fixed;
+    top: 500px;
     right: 10px;
   }
 
-  .rrss a {
+  header .rrss a {
     display: block;
   }
 }
