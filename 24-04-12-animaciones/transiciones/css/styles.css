@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  width: 80%;
+  margin: 50px auto;
+}
+
+div {
+  background-color: aqua;
+}
+
+a.boton-1 {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  opacity: 1;
+  display: inline-block;
+  transition: all 1s ease;
+}
+
+a.boton-1:hover {
+  background-color: hotpink;
+  border-radius: 10px;
+  width: 300px;
+  opacity: 0.5;
+  /*transition: all 1s ease;*/
+  transition: width 1s ease, opacity 1s linear 1s, background-color 2s ease;
+}
+
+a.boton-2 {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  opacity: 1;
+  display: inline-block;
+  transition: all 1s ease;
+}
+
+a.boton-2:hover {
+  transform: scale(2);
+  transition: all 0.5s ease;
+}
+
+.flex {
+  display: flex;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.card {
+  overflow: hidden; /*Esto es para que cuando escala hacia grande no se salga del div*/
+  position: relative;
+}
+
+.card .efecto-1 {
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.card:hover .efecto-1 {
+  transform: scale(1.5);
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+.card-texto {
+  height: 200px;
+  position: absolute;
+  transition: all 1s ease;
+  opacity: 0;
+  bottom: -200px;
+}
+
+.card:hover .card-texto {
+  bottom: 0%;
+  opacity: 1;
+  transition: all 1s ease;
+}
