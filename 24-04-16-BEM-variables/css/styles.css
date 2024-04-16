@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*VARIABLES*/
+:root {
+  --color-principal: black;
+  --color-principal-transparente: rgba(0, 0, 0, 0.4);
+  --color-secundario: red;
+  --color-secundario-transparente: rgba(255, 0, 0, 0.4);
+  --color-blanco: white;
+  --color-gris: #f0f0f0;
+  --tipo-destacados: 'Titillium Web', sans-serif;
+  --tipo-titulares: 'Open Sans', sans-serif;
+  --tipo-cuerpo: 'Montserrat', sans-serif;
+  --padding-sm: 0.5em;
+  --padding-md: 1em;
+  --padding-xl: 1.5em;
+  --padding-xxl: 2.5em;
+  --margin-sm: 0.5em;
+  --margin-md: 1em;
+  --margin-xl: 1.5em;
+  --margin-xxl: 2.5em;
+  --font-sm: 0.8em;
+  --font-md: 1em;
+  --font-lg: 1.5em;
+  --font-xl: 2em;
+  --border-radius: 5px;
+  --transicion-simple: all 0.5s ease;
+}
+
+body {
+  font-family: var(--tipo-cuerpo);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--tipo-titulares);
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.alinear-items-v {
+  align-items: center;
+}
+
+.alinear-items-extremos {
+  justify-content: space-between;
+}
+
+.alinear-items-centro {
+  justify-content: center;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+[class*='col-'] {
+  padding: var(--padding-xl);
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.contenedor {
+  width: 80%;
+  margin: var(--margin-xxl) auto;
+}
+
+.btn {
+  border: none;
+}
+
+/*HEADER*/
+
+.header {
+  background-color: var(--color-gris);
+  padding: var(--padding-md);
+}
+
+.nav {
+  background-color: var(--color-secundario);
+}
+
+.nav__link,
+.header__bag,
+.btn {
+  background-color: var(--color-secundario);
+  display: inline-block;
+  padding: var(--padding-sm);
+  color: var(--color-blanco);
+  transition: var(--transicion-simple);
+}
+
+.nav__link:hover,
+.nav__link--activo,
+.header__bag:hover,
+.btn:hover {
+  background-color: var(--color-principal);
+  transition: var(--transicion-simple);
+}
+
+.header__bag {
+  border: none;
+  font-size: var(--font-md);
+}
+
+/*BANNER PUBLICITARIO*/
+
+.banner {
+  position: relative;
+}
+
+.banner__contenido {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+  background-color: var(--color-principal-transparente);
+  padding: var(--padding-md);
+  color: var(--color-blanco);
+}
+
+.banner__contenido * {
+  margin: var(--margin-md) 0;
+}
+
+.banner__titular {
+  font-family: var(--tipo-destacados);
+}
+
+.banner__btn {
+  border-radius: var(--border-radius);
+}
+
+.banner__img {
+  width: 100%;
+}
+
+/*PRODUCTOS*/
+
+.productos__card {
+  border: 1px solid var(--color-gris);
+  border-radius: var(--border-radius);
+}
+
+.productos__card * {
+  margin: var(--margin-sm) 0;
+}
+
+.productos__card--oferta {
+  position: relative;
+}
+
+.productos__card--oferta span {
+  position: absolute;
+  background-color: var(--color-secundario);
+  right: 0;
+  top: 30%;
+  color: var(--color-blanco);
+  padding: var(--padding-sm);
+}
+
+.productos__btn::after {
+  content: url(../images/cart2.svg);
+  margin-left: var(--margin-sm);
+  filter: invert();
+}
+
+.productos__btn {
+}
+
+.productos__titular {
+  text-transform: uppercase;
+}
+
+.productos__nombre {
+  font-size: var(--font-sm);
+}
+
+/*EMPRESA*/
+
+.empresa {
+}
+
+.empresa__titular {
+  text-transform: uppercase;
+}
+
+.empresa__img {
+  transition: var(--transicion-simple);
+}
+
+.empresa__img:hover {
+  filter: grayscale(100%);
+  transition: var(--transicion-simple);
+}
+
+.empresa__texto {
+}
+
+/*BLOG*/
+
+.post {
+  border: 1px solid var(--color-gris);
+}
+
+.post__picture {
+}
+
+.post__search {
+}
+
+.post__img {
+}
+
+.post__texto {
+}
