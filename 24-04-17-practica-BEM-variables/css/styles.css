@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 *,
 *::after,
 *::before {
@@ -8,26 +10,26 @@
 
 /*VARIABLES*/
 :root {
-  --color-principal: black;
-  --color-principal-transparente: rgba(0, 0, 0, 0.4);
-  --color-secundario: rgb(198, 168, 144);
-  --color-secundario-transparente: rgba(198, 168, 144, 0.684);
+  --color-principal: #4f5756;
+  --color-principal-transparente: #4f575696;
+  --color-secundario: black;
+  --color-secundario-transparente: rgba(0, 0, 0, 0.571);
   --color-terciario: white;
-  --tipo-destacados: 'Titillium Web', sans-serif;
-  --tipo-titulares: 'Open Sans', sans-serif;
-  --tipo-cuerpo: 'Montserrat', sans-serif;
+  --tipo-destacados: "Roboto", sans-serif;
+  --tipo-cuerpo: "Almarai", sans-serif;
   --padding-sm: 0.5em;
   --padding-md: 1em;
-  --padding-xl: 1.5em;
+  --padding-lg: 1.5em;
+  --padding-xl: 2em;
   --padding-xxl: 2.5em;
   --margin-sm: 0.5em;
   --margin-md: 1em;
-  --margin-xl: 1.5em;
-  --margin-xxl: 2.5em;
+  --margin-lg: 1.5em;
+  --margin-xl: 2.5em;
   --font-sm: 0.8em;
   --font-md: 1em;
-  --font-lg: 1.5em;
-  --font-xl: 2em;
+  --font-lg: 1.2em;
+  --font-xl: 1.5em;
   --border-radius: 5px;
   --transicion-simple: all 0.5s ease;
 }
@@ -46,12 +48,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--tipo-titulares);
 }
 
 /*FLEX*/
@@ -85,7 +81,7 @@ h3 {
 /*HEADER*/
 
 .header__social {
-  background-color: var(--color-principal);
+  background-color: var(--color-secundario);
   padding: var(--padding-sm);
   text-align: center;
 }
@@ -97,27 +93,31 @@ h3 {
 }
 
 .nav__link {
-  background-color: var(--color-principal);
-  color: var(--color-terciario);
-  padding: var(--padding-sm);
+  color: var(--color-principal);
+  padding: var(--padding-xl);
   display: block;
+  font-family: var(--tipo-destacados);
+  text-transform: uppercase;
+  font-size: var(--font-lg);
 }
 
-.header__bag {
+.header__cesta {
   position: relative;
 }
 
 .header__bag__icono {
-  background-color: var(--color-principal);
-  color: var(--color-terciario);
+  color: var(--color-principal);
+  background-color: transparent;
   border: none;
   padding: var(--padding-sm);
+  font-size: var(--font-xl);
 }
 
-.header__comprado {
+.header__items-comprados {
+  background-color: transparent;
+  border: none;
+  font-size: var(--font-lg);
   position: absolute;
-  background-color: var(--color-terciario);
-  border-radius: var(--border-radius);
   right: 0;
   top: 0;
 }
