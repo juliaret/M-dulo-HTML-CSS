@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *,
 *::after,
@@ -15,8 +15,8 @@
   --color-secundario: black;
   --color-secundario-transparente: rgba(0, 0, 0, 0.571);
   --color-terciario: white;
-  --tipo-destacados: "Roboto", sans-serif;
-  --tipo-cuerpo: "Almarai", sans-serif;
+  --tipo-destacados: 'Roboto', sans-serif;
+  --tipo-cuerpo: 'Almarai', sans-serif;
   --padding-sm: 0.5em;
   --padding-md: 1em;
   --padding-lg: 1.5em;
@@ -30,6 +30,8 @@
   --font-md: 1em;
   --font-lg: 1.2em;
   --font-xl: 1.5em;
+  --font-xxl: 2em;
+  --font-xxxl: 3.5em;
   --border-radius: 5px;
   --transicion-simple: all 0.5s ease;
 }
@@ -80,25 +82,33 @@ ul {
 
 /*HEADER*/
 
+.header__contenido {
+  position: relative;
+}
+
 .header__social {
   background-color: var(--color-secundario);
   padding: var(--padding-sm);
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .header__link {
   color: var(--color-terciario);
   padding: var(--padding-sm);
   display: inline-block;
+  font-size: var(--font-xxl);
 }
 
 .nav__link {
-  color: var(--color-principal);
+  color: var(--color-terciario);
   padding: var(--padding-xl);
   display: block;
   font-family: var(--tipo-destacados);
   text-transform: uppercase;
   font-size: var(--font-lg);
+  border-bottom: 1px solid var(--color-terciario);
 }
 
 .header__cesta {
@@ -120,6 +130,38 @@ ul {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.barras {
+  display: block;
+  font-size: var(--font-xxxl);
+}
+
+.cruz {
+  display: none;
+  font-size: var(--font-xxxl);
+}
+
+.nav {
+  position: absolute;
+  background-color: var(--color-secundario);
+  width: 100%;
+  top: 100px;
+  left: 100%;
+  transition: var(--transicion-simple);
+}
+
+.header:hover .nav {
+  left: 0px;
+  transition: var(--transicion-simple);
+}
+
+.header:hover .cruz {
+  display: block;
+}
+
+.header:hover .barras {
+  display: none;
 }
 
 /*@MEDIA*/

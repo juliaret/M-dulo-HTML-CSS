@@ -15,6 +15,7 @@
 
     <!--HEADER-->
     <header class="header">
+      <!--RRSS-->
       <section class="header__social">
         <a class="header__link" href="#"><i class="bi bi-linkedin"></i></a>
         <a class="header__link" href="#"><i class="bi bi-instagram"></i></a>
@@ -24,17 +25,26 @@
       <section
         class="header__contenido flex alinear-horizontal alinear-extremos"
       >
-        <a class="header__logo" href="#"
-          ><img class="header__img" src="images/logo.jpeg" alt=""
-        /></a>
+        <!--LOGO-->
+        <a class="header__logo" href="#">
+          <img class="header__img" src="images/logo.jpeg" alt="" />
+        </a>
 
-        <nav class="nav">
+        <!--MENU HAMBURGUESA-->
+        <div class="header__icono-menu">
+          <i class="bi bi-list barras"></i>
+          <i class="bi bi-x-lg cruz"></i>
+        </div>
+
+        <!--MENU-->
+        <nav class="nav text-center">
           <a class="nav__link nav__link--activo" href="#">Inicio</a>
           <a class="nav__link" href="#">Servicios</a>
           <a class="nav__link" href="#">Empresa</a>
           <a class="nav__link" href="#">Noticias</a>
         </nav>
 
+        <!--CESTA-->
         <div class="header__cesta">
           <button class="header__bag__icono">
             <i class="bi bi-bag-fill"></i>
