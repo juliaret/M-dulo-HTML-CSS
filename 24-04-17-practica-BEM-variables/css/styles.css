@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 *,
 *::after,
@@ -11,12 +11,13 @@
 /*VARIABLES*/
 :root {
   --color-principal: #4f5756;
-  --color-principal-transparente: #4f575696;
+  --color-principal-claro: #778381;
   --color-secundario: black;
   --color-secundario-transparente: rgba(0, 0, 0, 0.571);
   --color-terciario: white;
-  --tipo-destacados: 'Roboto', sans-serif;
-  --tipo-cuerpo: 'Almarai', sans-serif;
+  --tipo-destacados: "Roboto", sans-serif;
+  --tipo-cuerpo: "Almarai", sans-serif;
+  --padding-xs: 0.3em;
   --padding-sm: 0.5em;
   --padding-md: 1em;
   --padding-lg: 1.5em;
@@ -30,8 +31,8 @@
   --font-md: 1em;
   --font-lg: 1.2em;
   --font-xl: 1.5em;
-  --font-xxl: 2em;
-  --font-xxxl: 3.5em;
+  --font-xxl: 2.5em;
+  --font-xxxl: 2.8em;
   --border-radius: 5px;
   --transicion-simple: all 0.5s ease;
 }
@@ -67,7 +68,7 @@ ul {
 }
 
 .alinear-extremos {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .text-center {
@@ -75,41 +76,93 @@ ul {
 }
 
 /*CONTENEDOR*/
+
 .contenedor {
   width: 80%;
   margin: var(--margin-xxl) auto;
+}
+
+/*REDES SOCIALES*/
+
+.header__social {
+  background-color: var(--color-secundario);
+  padding: var(--padding-md);
+  text-align: center;
+}
+
+.header__link {
+  color: var(--color-terciario);
+  padding: 0 var(--padding-sm);
+  display: inline-block;
+  font-size: var(--font-xl);
+}
+
+/*MENÚ HAMBURGUESA*/
+
+.barras {
+  display: block;
+  font-size: var(--font-xxxl);
+  padding: var(--padding-xs);
+}
+
+.cruz {
+  display: none;
+  font-size: var(--font-xxxl);
+  padding: var(--padding-xs);
+}
+
+.header:hover .cruz {
+  display: block;
+}
+
+.header:hover .barras {
+  display: none;
 }
 
 /*HEADER*/
 
 .header__contenido {
   position: relative;
+  padding: 0 var(--padding-sm);
 }
 
-.header__social {
-  background-color: var(--color-secundario);
-  padding: var(--padding-sm);
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.header__link {
-  color: var(--color-terciario);
-  padding: var(--padding-sm);
-  display: inline-block;
-  font-size: var(--font-xxl);
-}
+/*MENÚ*/
 
 .nav__link {
   color: var(--color-terciario);
-  padding: var(--padding-xl);
+  padding: var(--padding-lg);
   display: block;
   font-family: var(--tipo-destacados);
   text-transform: uppercase;
-  font-size: var(--font-lg);
+  font-size: var(--font-md);
   border-bottom: 1px solid var(--color-terciario);
 }
+
+.nav__link--activo {
+  background-color: var(--color-principal);
+}
+
+.nav__link:hover {
+  background-color: var(--color-principal-claro);
+}
+
+.nav {
+  position: absolute;
+  background-color: var(--color-secundario);
+  width: 100%;
+  top: 95px;
+  left: 100%; /*para que desaparezca del todo por la derecha*/
+  transition: var(--transicion-simple);
+}
+
+/*para hacer este tipo de menús hamburguesas el hover siempre hay que dárselo al header porque si no, al hacer clic, el menú nunca se mantendría a la vista. Lo ideal sería ponerle el hover al menú de hamburguesa pero eso solo se puede hacer con JavaScript*/
+
+.header:hover .nav {
+  left: 0px;
+  transition: var(--transicion-simple);
+}
+
+/*CESTA DE LA COMPRA*/
 
 .header__cesta {
   position: relative;
@@ -132,49 +185,66 @@ ul {
   top: 0;
 }
 
-.barras {
-  display: block;
-  font-size: var(--font-xxxl);
-}
-
-.cruz {
-  display: none;
-  font-size: var(--font-xxxl);
-}
-
-.nav {
-  position: absolute;
-  background-color: var(--color-secundario);
-  width: 100%;
-  top: 100px;
-  left: 100%;
-  transition: var(--transicion-simple);
-}
-
-.header:hover .nav {
-  left: 0px;
-  transition: var(--transicion-simple);
-}
-
-.header:hover .cruz {
-  display: block;
-}
-
-.header:hover .barras {
-  display: none;
-}
-
 /*@MEDIA*/
+/*576px*/
 @media (min-width: 576px) {
+  .nav {
+    top: 100px;
+  }
+
+  .header__link {
+    padding: var(--padding-sm) var(--padding-md);
+  }
 }
 
+/*768px*/
 @media (min-width: 768px) {
-  .col-6 {
-    width: 50%;
+  .nav {
+    position: static;
+    background-color: var(--color-terciario);
   }
 
   .nav__link {
+    color: var(--color-principal);
+    padding: var(--padding-sm);
+    margin: var(--margin-lg);
     display: inline-block;
+  }
+
+  .nav__link--activo {
+    background-color: var(--color-terciario);
+    border-bottom: 3px solid var(--color-principal);
+  }
+
+  .nav__link:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+  }
+
+  .barras,
+  .cruz {
+    display: none;
+  }
+
+  .header:hover .barras,
+  .header:hover .cruz {
+    display: none;
+  }
+
+  .header__contenido:nth-child(1) {
+    order: 1;
+  }
+
+  .header__contenido:nth-child(2) {
+    order: 3;
+  }
+
+  .header__contenido:nth-child(3) {
+    order: 2;
+  }
+
+  .col-6 {
+    width: 50%;
   }
 }
 
