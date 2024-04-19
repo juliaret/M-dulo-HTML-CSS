@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*VARIABLES*/
+:root {
+  --color-negro: black;
+  --color-blanco: white;
+  --tipo-destacados: 'Roboto', sans-serif;
+  --tipo-cuerpo: 'Almarai', sans-serif;
+  --padding-xs: 0.3em;
+  --padding-sm: 0.5em;
+  --padding-md: 1em;
+  --padding-lg: 1.5em;
+  --padding-xl: 2em;
+  --padding-xxl: 2.5em;
+  --margin-sm: 0.5em;
+  --margin-md: 1em;
+  --margin-lg: 1.5em;
+  --margin-xl: 2.5em;
+  --font-sm: 0.8em;
+  --font-md: 1em;
+  --font-lg: 1.2em;
+  --font-xl: 1.5em;
+  --font-xxl: 2.5em;
+  --font-xxxl: 2.8em;
+  --border-radius: 5px;
+  --transicion-simple: all 0.5s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.ultima-hora {
+  display: grid;
+  grid-area: ultima-hora;
+  gap: 50px;
+}
+
+.internacional,
+.nacional,
+.opinion {
+  display: grid;
+  gap: 50px;
+}
+
+.card__titular,
+.card__img {
+  margin-bottom: 1em;
+}
+
+/*MEDIA*/
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .internacional,
+  .opinion {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .ultima-hora {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .internacional,
+  .opinion {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1400px) {
+}

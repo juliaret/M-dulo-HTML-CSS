@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *,
 *::after,
@@ -15,8 +15,8 @@
   --color-secundario: black;
   --color-secundario-transparente: rgba(0, 0, 0, 0.571);
   --color-terciario: white;
-  --tipo-destacados: "Roboto", sans-serif;
-  --tipo-cuerpo: "Almarai", sans-serif;
+  --tipo-destacados: 'Roboto', sans-serif;
+  --tipo-cuerpo: 'Almarai', sans-serif;
   --padding-xs: 0.3em;
   --padding-sm: 0.5em;
   --padding-md: 1em;
@@ -231,15 +231,15 @@ ul {
     display: none;
   }
 
-  .header__contenido:nth-child(1) {
+  .header__logo {
     order: 1;
   }
 
-  .header__contenido:nth-child(2) {
+  .header__cesta {
     order: 3;
   }
 
-  .header__contenido:nth-child(3) {
+  .nav {
     order: 2;
   }
 

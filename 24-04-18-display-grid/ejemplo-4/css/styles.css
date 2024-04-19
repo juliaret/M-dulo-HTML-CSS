@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-verde: green;
+  --color-verde-claro: rgb(86, 172, 86);
+  --color-blanco: white;
+  --color-marron: rgb(186, 143, 64);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.header {
+  text-align: center;
+  grid-area: cabecera;
+}
+
+.nav {
+  grid-area: nav;
+  text-align: center;
+  background-color: var(--color-verde-claro);
+}
+
+.nav__link {
+  display: block;
+  padding: 1em;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  border-bottom: 1px solid var(--color-blanco);
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.nav__link:hover {
+  background-color: var(--color-marron);
+  transition: all 0.5s ease;
+}
+
+.productos {
+  grid-area: productos;
+  display: grid;
+  gap: 30px 0;
+}
+
+.card {
+  border: 1px solid var(--color-verde);
+  text-align: center;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__texto,
+.card__btn {
+  margin: 1em 0;
+}
+
+.card__texto {
+  padding: 0.5em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-marron);
+  transition: all 0.5s ease;
+}
+
+.lateral {
+  grid-area: lateral;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.lateral__icon {
+  color: var(--color-marron);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: var(--color-marron);
+}
+
+/*MEDIA*/
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .nav__link {
+    display: inline-block;
+    border: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .productos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      'cabecera cabecera'
+      'nav nav'
+      'productos lateral'
+      'footer footer';
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    display: grid;
+    grid-template-columns: 250px 2fr 1fr;
+    grid-template-areas:
+      'nav cabecera cabecera'
+      'nav productos lateral'
+      'nav footer footer';
+  }
+
+  .nav__link {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--color-blanco);
+  }
+
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+  }
+}
