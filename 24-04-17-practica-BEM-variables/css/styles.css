@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *,
 *::after,
@@ -17,8 +17,8 @@
   --color-terciario: white;
   --color-accent: #610015;
   --color-accent-claro: #7d5059;
-  --tipo-destacados: "Roboto", sans-serif;
-  --tipo-cuerpo: "Gentium Plus", serif;
+  --tipo-destacados: 'Roboto', sans-serif;
+  --tipo-cuerpo: 'Gentium Plus', serif;
   --padding-xs: 0.3em;
   --padding-sm: 0.5em;
   --padding-md: 1em;
@@ -134,6 +134,7 @@ ul {
 .header__contenido {
   position: relative;
   padding: var(--padding-sm);
+  overflow: hidden;
 }
 
 /*MENÚ*/
@@ -157,12 +158,13 @@ ul {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   background-color: var(--color-secundario);
   width: 100%;
-  top: 93px;
+  top: 160px;
   left: 100%; /*para que desaparezca del todo por la derecha*/
   transition: var(--transicion-simple);
+  z-index: 3;
 }
 
 /*para hacer este tipo de menús hamburguesas el hover siempre hay que dárselo al header porque si no, al hacer clic, el menú nunca se mantendría a la vista. Lo ideal sería ponerle el hover al menú de hamburguesa pero eso solo se puede hacer con JavaScript*/
@@ -225,7 +227,7 @@ textarea {
   width: 100%;
 }
 
-.btn-submit [type="submit"] {
+.btn-submit [type='submit'] {
   padding: var(--padding-md);
   background-color: var(--color-accent);
   color: var(--color-terciario);
@@ -235,7 +237,7 @@ textarea {
   transition: var(--transicion-simple);
 }
 
-.btn-submit [type="submit"]:hover {
+.btn-submit [type='submit']:hover {
   background-color: var(--color-terciario);
   color: var(--color-accent);
   border: 2.5px solid var(--color-accent);
@@ -266,13 +268,20 @@ textarea {
   font-weight: 400;
 }
 
+.producto--oferta {
+}
+
 .producto--oferta span {
   position: absolute;
   background-color: var(--color-accent);
   color: var(--color-terciario);
-  padding: var(--padding-md);
   border-radius: var(--border-radius-xxl);
   font-size: var(--font-lg);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tienda__titular {
@@ -314,11 +323,16 @@ textarea {
 
 .col-4 {
   width: 100%;
+  padding: var(--padding-md);
 }
 
 .imagenes__foto {
   position: relative;
-  padding: var(--padding-md);
+  overflow: hidden;
+}
+
+.foto {
+  display: block;
 }
 
 .imagenes__caption {
@@ -331,9 +345,10 @@ textarea {
   bottom: -60px;
   opacity: 0;
   transition: var(--transicion-simple);
+  width: 100%;
 }
 
-.imagenes:hover .imagenes__caption {
+.imagenes__foto:hover .imagenes__caption {
   bottom: 0%;
   opacity: 1;
   transition: var(--transicion-simple);

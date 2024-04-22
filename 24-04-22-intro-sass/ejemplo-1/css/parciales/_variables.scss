@@ -1,0 +1,17 @@
+$color-fondo: rgb(134, 75, 134);
+
+$color-fondo-boton: orange;
+$color-texto-boton: white;
+
+@mixin boton {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  background-color: $color-fondo-boton;
+  color: $color-texto-boton;
+  border-radius: 5px;
+  &:hover {
+    color: $color-fondo-boton;
+    background-color: $color-texto-boton;
+  }
+}

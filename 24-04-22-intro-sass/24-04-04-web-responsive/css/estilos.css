@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/*ESTILOS GENERALES*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Philosopher", sans-serif;
+}
+
+/*HEADER*/
+.header {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.nav {
+  background-color: rgb(113, 148, 215);
+}
+.nav .nav__link {
+  display: block;
+  color: white;
+  padding: 1em;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+.nav .nav__link:hover, .nav .nav__link--activo {
+  background-color: white;
+  color: rgb(113, 148, 215);
+  border: 1px solid rgb(113, 148, 215);
+}
+
+@media (min-width: 768px) {
+  .nav .nav__link {
+    display: inline-block;
+    border: none;
+  }
+  .nav .nav__link:hover, .nav .nav__link--activo {
+    border: none;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    text-align: right;
+  }
+}
+/*PÁGINA INICIO*/
+/*FOOTER*//*# sourceMappingURL=estilos.css.map */

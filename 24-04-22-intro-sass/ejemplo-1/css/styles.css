@@ -1,0 +1,46 @@
+/*Comentario css*/
+header {
+  background-color: aqua;
+}
+header h1 {
+  color: brown;
+}
+header nav {
+  text-align: center;
+}
+header nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+header nav a:hover {
+  background-color: red;
+  color: coral;
+}
+
+section {
+  width: 50%;
+  margin: 100px auto;
+  background-color: rgb(134, 75, 134);
+}
+section.principal {
+  background-color: cornflowerblue;
+}
+section div {
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+}
+.btn:hover {
+  color: orange;
+  background-color: white;
+}/*# sourceMappingURL=styles.css.map */

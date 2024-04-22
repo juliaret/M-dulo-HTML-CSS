@@ -1,0 +1,47 @@
+/*Comentario css*/
+
+//Comentario SASS
+
+//VARIABLES
+@import './parciales/variables';
+
+header {
+  background-color: aqua;
+
+  h1 {
+    color: brown;
+  }
+
+  nav {
+    text-align: center;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      &:hover {
+        background-color: red;
+        color: coral;
+      }
+    }
+  }
+}
+
+section {
+  width: 50%;
+  margin: 100px auto;
+  background-color: $color-fondo;
+
+  &.principal {
+    background-color: cornflowerblue;
+  }
+
+  div {
+    text-align: center;
+  }
+}
+
+.btn {
+  @include boton;
+}

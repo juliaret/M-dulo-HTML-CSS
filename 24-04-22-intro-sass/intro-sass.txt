@@ -1,0 +1,405 @@
+https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/tutorial-de-sass/
+https://learnxinyminutes.com/docs/es-es/sass-es/
+
+
+CSS
+
+.cabecera {
+    background-color: #f0f0f0;
+}
+
+.cabecera h1{
+    color: #000000;
+}
+
+SASS
+
+.cabecera
+    background-color: #f0f0f0
+    h1
+        color: #000000
+
+SCSS
+
+.cabecera{
+    background-color: #f0f0f0;
+    h1{ 
+        color: #000000;
+        }
+    }
+
+////// UTILIZAREMOS SCSS
+
+    VARIABLES
+
+    $color-fondos: #F55;
+
+    h1 {
+    background-color: $color-fondos;
+    }
+
+    DIRECTIVAS:
+
+    IMPORTAR
+
+        @import: incorporar otros archivos en la hoja de estilos
+
+        @import "variables";
+        @import "partials/styles";
+
+        no es necesario poner la extensión del archivo.
+
+    PARTIALS(parciales)
+
+        En el trabajo con SASS, lo que se importa más a menudo son los llamados partials. 
+        Se trata de fragmentos de código con los que se crean módulos que se pueden instalar 
+        fácilmente una y otra vez. Al nombrar el archivo, es importante preceder el nombre real 
+        con un guion bajo, el cual informa al compilador de que este archivo no necesita una 
+        contrapartida en CSS. De lo contrario, el sistema convertiría todos los archivos SASS a CSS.
+
+        Al importar los parciales el guion bajo se omite.
+
+        _variables.scss
+
+    MIXINS (mezclas)
+
+        Otra directiva importante la constituyen las llamadas mixins, reglas fijas que pueden 
+        invocarse en la hoja de estilo cuando sea necesario sin tener que volver a insertar 
+        el código completo.
+
+        Para trabajar eficazmente con mixins, solo se necesitan dos directivas:
+        @mixin e @include: con la primera se crea el modelo, 
+        con la segunda se inserta el bloque de código:
+
+        se crea: 
+                @mixin big-blue-text {
+                font-family: Arial;
+                font-size: 25px;
+                font-weight: bold;
+                color:#0000ff;
+                } 
+                }
+        se inserta:
+
+                @include big-blue-text;
+
+        EXTEND (Extensiones)
+
+        La directiva garantiza que todas las propiedades de una clase se transfieran 
+        a las de otra. Usando @extend se evita tener que redefinirlo todo. 
+        La directiva también funciona como una cadena. Una clase definida 
+        por @extend puede a su vez formar parte de una tercera clase:     
+
+        ej SCSS:
+
+        .button-scope {
+        margin: 5px;
+         border-radius: 2px;
+        }
+        .home-button {
+         @extend .button-scope;
+         background-color: $black;
+        }
+        .back-button {
+        @extend .home-button;
+        }
+
+        resolución CSS:
+
+        .button-scope, .home-button, .back-button {
+        margin: 5px;
+        border-radius: 2px;
+        }
+
+        .home-button, .back-button {
+        background-color: #000000;
+        }
+
+        En algunas situaciones puede ser necesario especificar la apariencia de una clase
+         que no se quiere aplicar en una página web, pero sí utilizar en forma de @extend. 
+         Esto ocurre sobre todo cuando se crea una biblioteca. SASS ofrece selectores de 
+         marcadores de posición (placeholder selectors) para tales situaciones. Se utiliza 
+         un signo de porcentaje (%) para identificar a una clase que se crea únicamente 
+         con el fin de utilizarla en otras clases. Si al diseñar el sitio web no se 
+         importa un selector de este tipo, SASS tampoco lo compilará en CSS:
+
+        Ej SCSS:
+
+        %module {
+        margin: 20px;
+        padding: 10px;
+        color: $bg-color;
+        }
+        .post {
+        @extend %module;
+        color: $grey;
+        }
+
+         resolución CSS:
+
+         .post {
+        margin: 20px;
+        padding: 10px;
+        color: …;
+        }
+
+        .post {
+        color: #D3D3D3;
+        }
+
+        NESTING (anidación)
+
+        SASS devuelve la anidación a las hojas de estilo al permitir que las subcategorías
+         hereden las propiedades de la categoría superior. Esto también garantiza la ligereza
+          del código y la reducción de la carga de trabajo para escribir y esperar.
+
+        Ej SCSS:
+
+        a {
+        color: $blue;
+            &:visited {
+                color: $red;
+                }
+            &:hover {
+                color: $purple;
+                    }
+        }
+
+        resolución CSS:
+
+        a {
+        color: #0000FF;
+        }
+
+        a:visited {
+        color: #FF0000;
+        }
+
+        a:hover {
+        color: #551A8B;
+        }
+
+        FUNCIONES DE SASS
+
+        SASS conoce numerosas funciones que facilitan el trabajo en la hoja de estilo. 
+        Se trata de workflows predefinidos que evitan tener que ejecutarlos manualmente. 
+        Las funciones pueden asignarse a diferentes categorías:
+
+    Colores: con estas funciones pueden ajustarse los valores de color, la saturación, 
+    la transparencia y muchas otras propiedades. Con mix(), p.ej., pueden mezclarse dos 
+    colores y crear uno nuevo.
+
+    Listas: en las listas (series de valores de propiedad CSS) las funciones sirven para
+     leer el número de entradas o fusionar varias listas en una sola.
+
+    Cadenas: las strings son cadenas fijas de caracteres, como las que se utilizan en los textos.
+     Las funciones de esta categoría pueden colocar una cadena de caracteres entre comillas 
+     o convertir un texto completo a mayúsculas.
+
+    Selectores: con las funciones de esta categoría se manipulan selectores completos. 
+    Con selector-unify() puedes fusionar dos selectores en uno solo (ahorrando mucha escritura).
+
+    Números: dentro del tema de los números, valores o unidades, encontrarás funciones que pueden,
+     entre otras cosas, redondear hacia arriba y hacia abajo, buscar el número más grande de un
+      conjunto o entregar un número aleatorio.
+
+    Mapas: los mapas en SASS son estructuras de datos compuestas de claves y propiedades. 
+    Con las funciones adecuadas, estos conjuntos de datos pueden manipularse fusionando dos 
+    mapas o borrando una clave de un mapa.
+
+    Introspección: estas funciones permiten revisar el contenido de la hoja de estilo completa 
+    para comprobar, entre otras cosas, si en el código se encuentra una característica determinada,
+     un mixin o una función en concreto.
+
+    Miscellaneous: en el punto miscelánea SASS también incluye la útil función if() –que no 
+    debe confundirse con la directiva del mismo nombre. 
+
+
+    Las funciones se insertan en el código siguiendo siempre el mismo patrón: cada función 
+    posee un nombre propio y ciertos parámetros que se encierran entre paréntesis separados
+     por comas. Como resultado, la función entrega un valor individual:
+
+    EJ SCSS:
+
+    $color-1: #ffff00;
+    $color-2: #0000ff;
+    body {
+    background-color: mix($color-1, $color-2, 30%);
+    //o también:
+    background-color: mix(#ffff00, #0000ff, 30%);
+    }
+
+    Resultado css:
+
+    body {
+    background-color: #4d4db3;
+    }
+
+    FUNCIONES PROPIAS
+
+    Las funciones se crean con la directiva @function, aunque en realidad necesitan 
+    siempre dos directivas: además de la inicial @function, se necesita un @return 
+    anidado con el cual se define el valor de salida:
+
+    Ej SCSS:
+
+    $column-count: 12;
+    @function column-width($num) {
+    @return $num * 100% / $column-count;
+    }
+
+    .three-columns {
+    width: column-width(3);
+    }
+
+    resultado css:
+
+    .three-columns {
+    width: 25%;
+    }
+
+    BUCLES (loops)
+
+    En SASS se utilizan para crear bloques de instrucciones que se repiten hasta que tiene
+     lugar una condición determinada. Existen tres directivas diferentes para crear bucles:
+
+    @for
+    @while
+    @each
+
+    @for es el loop estándar en programación: comienza al inicio y repite la orden hasta 
+    que se alcanza un estado de salida y con ello el final. En SASS, esta directiva se 
+    presenta en dos variantes diferentes: o bien el último ciclo se ejecuta una vez más 
+    cuando se alcanza el objetivo o se abandona el bucle antes.
+
+    Ej SCSS:
+
+
+    //este es para menor o igual. Da 4 vueltas.
+    @for $i from 1 through 4 {
+	.width-#{$i} { width: 10em + $i; }
+    }
+    //este es para menor. Da 3 vueltas.
+    @for $i from 1 to 4 {
+	.height-#{$i} { height: 25em * $i; }
+    }
+
+    Hay dos elementos integrados en el bucle: primero se elige la notación de CSS 
+    que obtendrá una cifra superior con #{$i}: la variable –y, por lo tanto, también la notación– 
+    se incrementará en 1 con cada vuelta.
+
+    (En SASS #{} es una interpolación. Con ella se puede combinar a una variable con un 
+    identificador que se ha asignado a sí mismo.)
+
+    Resultado CSS:
+
+    .width-1 {
+    width: 11em;
+    }
+    .width-2 {
+    width: 12em;
+    }
+    .width-3 {
+    width: 13em;
+    }
+    .width-4 {
+    width: 14em;
+    }
+    .height-1 {
+    height: 25em;
+    }
+    .height-2 {
+    height: 50em;
+    }
+    .height-3 {
+    height: 75em;
+    }
+
+    La directiva@while tiene una mecánica muy similar a la de @for pero, mientras que este 
+    último tiene puntos fijos de inicio y final, un bucle @while contiene una consulta de 
+    tipo lógico: mientras un estado siga siendo verdadero, las órdenes deberán repetirse.
+
+    Ej SCSS:
+
+    $i: 1;
+    @while $i < 5 {
+	.width-#{$i} { width: 10em + $i; }
+	$i: $i + 1;
+    }
+
+    La directiva @each funciona de manera diferente. Este bucle se basa en una lista de datos
+     especificada por el usuario que el bucle recorrerá en cada vuelta. Para cada entrada, 
+     @each hace una repetición diferente. De este modo, indicando una lista con 
+     los valores 1, 2, 3 y 4 sería posible generar el mismo resultado que con los otros bucles. 
+     La verdadera ventaja de este bucle, sin embargo, es que también puede introducirse 
+     otra información en la lista exceptuando valores numéricos (con @each, por ejemplo, 
+     se insertan varias imágenes diferentes en el diseño). Puedes introducir los datos 
+     directamente en la directiva o introducir la lista en una variable y luego llamarla.
+
+     Ej SCSS:
+
+    $list: dog cat bird dolphin;
+    @each $i in $list {
+	.image-#{$i} { background-image: url('/images/#{$i}.png'); }
+    }
+
+    Resultado scc:
+
+    .image-dog {
+    background-image: url("/images/dog.png");
+    }
+    .image-cat {
+    background-image: url("/images/cat.png");
+    }
+    .image-bird {
+    background-image: url("/images/bird.png");
+    }
+    .image-dolphin {
+    background-image: url("/images/dolphin.png");
+    }
+
+
+    RAMIFICACIÓN
+
+    Además de los bucles, SASS ofrece aún otra herramienta más conocida en el entorno de 
+    la programación: las ramificaciones según el principio “si-entonces-si no”. 
+    Con la directiva @if una orden solo se ejecuta si tiene lugar un cierto evento; 
+    en caso contrario, se ejecuta otro comando. Además de esta directiva, 
+    también hay una función if(). No guardan relación, pero pueden aparecer juntas. 
+    La función es fácil de explicar. Contiene tres parámetros: la condición y 
+    dos salidas diferentes. La primera salida se emite si el primer parámetro es verdadero, 
+    de lo contrario la función reproduce el tercer parámetro.
+
+    Ej SCSS: función if()
+
+    $black: #000000;
+    $white: #ffffff;
+    $text-color: $black;
+    body {
+	background-color: if($text-color == $black, $white, $black);
+    }
+
+
+    Ej SCSS: directiva @if
+
+    $black: #000000;
+    $white: #ffffff;
+    $lightgrey: #d3d3d3;
+    $darkgrey: #545454;
+    @mixin text-color($color) {
+    @if ($color == $black) {
+    background-color: $white;
+    }
+    @else if ($color == $white) {
+    background-color: $black;
+    }
+    @else if ($color == $lightgrey) {
+    background-color: $black;
+    }
+    @else {
+    background-color: $white;
+    }
+    }
+    p {
+        @include text-color($lightgrey);
+    }
