@@ -10,8 +10,11 @@
 :root {
   --color-negro: black;
   --color-blanco: white;
-  --tipo-destacados: 'Roboto', sans-serif;
-  --tipo-cuerpo: 'Almarai', sans-serif;
+  --color-accent: #f7cf3c;
+  --color-accent-claro: #ffeca8;
+  --tipo-destacados: "Roboto", sans-serif;
+  --tipo-cuerpo: "Almarai", sans-serif;
+  --padding-xxs: 0.2em;
   --padding-xs: 0.3em;
   --padding-sm: 0.5em;
   --padding-md: 1em;
@@ -45,6 +48,49 @@ a {
   margin: 50px auto;
 }
 
+/*HEADER*/
+.header {
+  text-align: center;
+  padding: var(--padding-md) var(--padding-md) 0 var(--padding-md);
+}
+
+.arriba {
+  justify-content: space-between;
+  margin-bottom: var(--margin-lg);
+}
+
+.arriba__btn {
+  padding: var(--padding-md);
+  margin: var(--margin-sm);
+  border: 2px solid var(--color-accent);
+  background-color: var(--color-blanco);
+  transition: var(--transicion-simple);
+}
+
+.arriba__btn:hover {
+  background-color: var(--color-accent-claro);
+  transition: var(--transicion-simple);
+}
+
+.arriba__btn--importante {
+  background-color: var(--color-accent);
+  font-weight: 600;
+}
+
+.nav {
+  margin-top: var(--margin-lg);
+}
+
+.nav__link {
+  display: block;
+  padding: var(--padding-sm) 0;
+  color: var(--color-negro);
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid var(--color-negro);
+}
+
 /*SECCIÓN 1 - ÚLTIMA HORA*/
 .ultima-hora {
   display: grid;
@@ -54,7 +100,7 @@ a {
 
 .internacional,
 .nacional,
-.opinion {
+.destacados {
   display: grid;
   gap: 50px;
 }
@@ -65,8 +111,22 @@ a {
 }
 
 /*SECCIÓN 2 - DEPORTES*/
+
+.deportes__noticias {
+  display: grid;
+  gap: 20px 0;
+}
+
 .deportes__titular {
+  margin-bottom: 20px;
+}
+
+.ficha__titular {
   font-size: var(--font-lg);
+}
+
+.ficha * {
+  padding: var(--padding-xxs) 0;
 }
 
 .flex {
@@ -77,18 +137,85 @@ a {
   flex-wrap: wrap;
 }
 
-.col-6 {
-  width: 100%;
+/*SECCIÓN 3 - ACTUALIDAD*/
+
+.actualidad__publicidad {
+  height: 600px;
+  width: 250px;
+  background-color: rgb(177, 177, 177);
+  margin-top: 30px;
+}
+
+.actualidad__noticias {
+  display: grid;
+  grid-area: noticias-actualidad;
+  gap: 30px;
+}
+
+.actualidad__publicidad {
+  display: grid;
+  grid-area: publicidad-actualidad;
+}
+
+.actualidad__titular {
+  margin-bottom: 20px;
+}
+
+.noticia * {
+  padding: var(--padding-xxs) 0;
+}
+
+/*SECCIÓN 4 - OPINIÓN*/
+
+.opinion__contenido {
+  display: grid;
+  gap: 30px;
+}
+
+.opinion__titular {
+  margin-bottom: 20px;
+}
+
+.extracto * {
+  padding: var(--padding-xxs) 0;
 }
 
 /*MEDIA*/
 @media (min-width: 576px) {
+  .wrap {
+    flex-wrap: nowrap;
+  }
+
+  .ficha * {
+    padding: var(--padding-xxs);
+  }
+
+  .opinion__contenido {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 768px) {
+  .arriba__texto {
+    display: inline-block;
+  }
+
+  .nav__link {
+    display: inline-block;
+    padding: var(--padding-sm) var(--padding-md);
+  }
+
   .internacional,
-  .opinion {
+  .destacados {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .actualidad__noticias {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .opinion__contenido {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -101,8 +228,28 @@ a {
   }
 
   .internacional,
-  .opinion {
+  .destacados {
     grid-template-columns: 1fr;
+  }
+
+  .deportes__noticias {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+  }
+
+  .actualidad__contenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "noticias-actualidad noticias-actualidad publicidad-actualidad";
+    gap: 0 30px;
+  }
+
+  .actualidad__publicidad {
+    margin-top: 7px;
+  }
+
+  .opinion__contenido {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 

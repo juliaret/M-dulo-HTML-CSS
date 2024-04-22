@@ -11,19 +11,21 @@
 
     <!--HEADER-->
     <header class="header">
-      <div class="header__info">
-        <p class="header__texto">19 abr 2024</p>
-        <p class="header__texto">Actualizado 13:07</p>
-        <p class="header__texto">CEST</p>
-        <p class="header__texto">ESPAÑA</p>
+      <div class="arriba flex">
+        <div class="arriba__info">
+          <p class="arriba__texto">19 abr 2024</p>
+          <p class="arriba__texto">Actualizado 13:07</p>
+          <p class="arriba__texto">CEST</p>
+          <p class="arriba__texto">ESPAÑA</p>
+        </div>
+
+        <div class="arriba__botones">
+          <button class="arriba__btn arriba__btn--importante">SUSCRÍBETE</button>
+          <button class="arriba__btn">INICIAR SESIÓN</button>
+        </div>
       </div>
 
-      <div class="header__botones">
-        <button class="header__btn">SUSCRÍBETE</button>
-        <button class="header__btn">INICIAR SESIÓN</button>
-      </div>
-
-      <img src="images/logo.svg" alt="" />
+      <img class="header__logo" src="images/logo.svg" alt="" />
 
       <nav class="nav">
         <a class="nav__link" href="#">INTERNACIONAL</a>
@@ -47,7 +49,8 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
             quibusdam recusandae repellat, earum, rem eligendi doloribus
             voluptatem vitae explicabo omnis quis dignissimos. Maiores libero
-            nulla quae ipsa perferendis exercitationem optio Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            nulla quae ipsa perferendis exercitationem optio Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit.
           </p>
         </div>
 
@@ -59,7 +62,8 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
             quibusdam recusandae repellat, earum, rem eligendi doloribus
             voluptatem vitae explicabo omnis quis dignissimos. Maiores libero
-            nulla quae ipsa perferendis exercitationem optio Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            nulla quae ipsa perferendis exercitationem optio Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit.
           </p>
         </div>
 
@@ -71,7 +75,8 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
             quibusdam recusandae repellat, earum, rem eligendi doloribus
             voluptatem vitae explicabo omnis quis dignissimos. Maiores libero
-            nulla quae ipsa perferendis exercitationem optio Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            nulla quae ipsa perferendis exercitationem optio Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit.
           </p>
         </div>
       </section>
@@ -79,11 +84,7 @@
       <!--SUBSECCIÓN 2 - NACIONAL-->
       <section class="nacional">
         <div class="nacional__card">
-          <img
-            class="card__img"
-            src="images/ultima-hora-foto-1.avif"
-            alt=""
-          />
+          <img class="card__img" src="images/ultima-hora-foto-1.avif" alt="" />
           <h2 class="card__titular">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit
           </h2>
@@ -96,11 +97,7 @@
         </div>
 
         <div class="nacional__card">
-          <img
-            class="card__img"
-            src="images/ultima-hora-foto-1.avif"
-            alt=""
-          />
+          <img class="card__img" src="images/ultima-hora-foto-1.avif" alt="" />
           <h2 class="card__titular">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit
           </h2>
@@ -113,14 +110,10 @@
         </div>
       </section>
 
-      <!--SUBSECCIÓN 3 - OPINIÓN-->
-      <section class="opinion">
-        <div class="opinion__card">
-          <img
-            class="card__img"
-            src="images/ultima-hora-foto-1.avif"
-            alt=""
-          />
+      <!--SUBSECCIÓN 3 - DESTACADOS-->
+      <section class="destacados">
+        <div class="destacados__card">
+          <img class="card__img" src="images/ultima-hora-foto-1.avif" alt="" />
           <p class="card__texto">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
             quibusdam recusandae repellat, earum, rem eligendi doloribus
@@ -129,63 +122,245 @@
           </p>
         </div>
 
-        <div class="opinion__card">
-            <img
-              class="card__img"
-              src="images/ultima-hora-foto-1.avif"
-              alt=""
-            />
-            <p class="card__texto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-                quibusdam recusandae repellat, earum, rem eligendi doloribus
-                voluptatem vitae explicabo omnis quis dignissimos maiores libero
-                nulla quae.
-            </p>
-          </div>
+        <div class="destacados__card">
+          <img class="card__img" src="images/ultima-hora-foto-1.avif" alt="" />
+          <p class="card__texto">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            quibusdam recusandae repellat, earum, rem eligendi doloribus
+            voluptatem vitae explicabo omnis quis dignissimos maiores libero
+            nulla quae.
+          </p>
+        </div>
 
-          <div class="opinion__card">
-            <img
-              class="card__img"
-              src="images/ultima-hora-foto-1.avif"
-              alt=""
-            />
-            <p class="card__texto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-                quibusdam recusandae repellat, earum, rem eligendi doloribus
-                voluptatem vitae explicabo omnis quis dignissimos maiores libero
-                nulla quae.
-            </p>
-          </div>
+        <div class="destacados__card">
+          <img class="card__img" src="images/ultima-hora-foto-1.avif" alt="" />
+          <p class="card__texto">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            quibusdam recusandae repellat, earum, rem eligendi doloribus
+            voluptatem vitae explicabo omnis quis dignissimos maiores libero
+            nulla quae.
+          </p>
+        </div>
       </section>
+    </section>
 
+    <!--SECCIÓN 2 - DEPORTES-->
+    <section class="deportes contenedor">
+      <h2 class="deportes__titular">DEPORTES</h2>
 
-          <!--SECCIÓN 2 - DEPORTES-->
-          <section class="deportes">
-            <h2>DEPORTES</h2>
-            <div class="ficha-1 flex wrap">
-              <div class="deportes__img col-6">
-                <img class="deportes__foto" src="images/deportes-foto-1.avif" alt="">
-              </div>
+      <div class="deportes__noticias">
+        <div class="ficha flex wrap">
+          <div class="ficha__img">
+            <img class="ficha__foto" src="images/deportes-foto-1.JPG" alt="" />
+          </div>
 
-              <div class="deportes__titular-texto col-6">
-                <h2 class="deportes__titular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nemo quam corrupti eveniet sint quae, consequuntur deleniti quo nihil consectetur.</h2>
-              
-                <p class="deportes__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem rem iusto odio ipsa impedit architecto soluta aperiam laboriosam alias. Illum ipsum sequi magnam nam, veniam consequuntur quas odio reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div> 
+          <div class="ficha__contenido">
+            <h2 class="ficha__titular">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+              nemo quam corrupti eveniet sint.
+            </h2>
+
+            <p class="ficha__texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+              dolorem rem iusto odio ipsa impedit architecto soluta aperiam
+              laboriosam alias. Illum ipsum sequi magnam nam...
+            </p>
+          </div>
+        </div>
+
+        <div class="ficha flex wrap">
+          <div class="ficha__img">
+            <img class="ficha__foto" src="images/deportes-foto-2.JPG" alt="" />
+          </div>
+
+          <div class="ficha__contenido">
+            <h2 class="ficha__titular">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+              nemo quam corrupti eveniet sint.
+            </h2>
+
+            <p class="ficha__texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+              dolorem rem iusto odio ipsa impedit architecto soluta aperiam
+              laboriosam alias. Illu ipsum dolor sit amet consectetur elit...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCIÓN 3 - ACTUALIDAD-->
+    <section class="actualidad contenedor">
+      <h2 class="actualidad__titular">ACTUALIDAD</h2>
+
+      <div class="actualidad__contenido">
+        <div class="actualidad__noticias">
+          <div class="noticia">
+            <div class="noticia__img">
+              <img
+                class="noticia__foto"
+                src="images/actualidad-foto-1.jpg"
+                alt=""
+              />
             </div>
 
-            <div class="ficha-2 flex wrap">
-              <div class="deportes__img col-6">
-                <img class="deportes__foto" src="images/deportes-foto-2.jpeg" alt="">
-              </div>
+            <div class="noticia__contenido">
+              <h2 class="noticia__titular">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                nemo quam corrupti eveniet sint.
+              </h2>
 
-              <div class="deportes__titular-texto col-6">
-                <h2 class="deportes__titular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nemo quam corrupti eveniet sint quae, consequuntur deleniti quo nihil consectetur.</h2>
-              
-                <p class="deportes__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem rem iusto odio ipsa impedit architecto soluta aperiam laboriosam alias. Illum ipsum sequi magnam nam, veniam consequuntur quas odio reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div> 
+              <p class="noticia__texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                dolorem rem iusto odio ipsa impedit architecto soluta aperiam
+                laboriosam alias. Illum ipsum sequi magnam nam...
+              </p>
             </div>
-          </section>
+          </div>
 
+          <div class="noticia">
+            <div class="noticia__img">
+              <img
+                class="noticia__foto"
+                src="images/actualidad-foto-2.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="noticia__contenido">
+              <h2 class="noticia__titular">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                nemo quam corrupti eveniet sint.
+              </h2>
+
+              <p class="noticia__texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                dolorem rem iusto odio ipsa impedit architecto soluta aperiam
+                laboriosam alias. Illum ipsum sequi magnam nam...
+              </p>
+            </div>
+          </div>
+
+          <div class="noticia">
+            <div class="noticia__img">
+              <img
+                class="noticia__foto"
+                src="images/actualidad-foto-3.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="noticia__contenido">
+              <h2 class="noticia__titular">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                nemo quam corrupti eveniet sint.
+              </h2>
+
+              <p class="noticia__texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                dolorem rem iusto odio ipsa impedit architecto soluta aperiam
+                laboriosam alias. Illum ipsum sequi magnam nam...
+              </p>
+            </div>
+          </div>
+
+          <div class="noticia">
+            <div class="noticia__img">
+              <img
+                class="noticia__foto"
+                src="images/actualidad-foto-4.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="noticia__contenido">
+              <h2 class="noticia__titular">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                nemo quam corrupti eveniet sint.
+              </h2>
+
+              <p class="noticia__texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                dolorem rem iusto odio ipsa impedit architecto soluta aperiam
+                laboriosam alias. Illum ipsum sequi magnam nam...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="actualidad__publicidad"></div>
+      </div>
+    </section>
+
+    <!--SECCIÓN 4 - OPINIÓN-->
+    <section class="opinion contenedor">
+      <h2 class="opinion__titular">OPINIÓN</h2>
+      <div class="opinion__contenido">
+        <div class="extracto">
+          <h2 class="extracto__titular">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+            nemo quam corrupti eveniet sint.
+          </h2>
+
+          <p class="extracto__texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem
+            rem iusto odio ipsa impedit architecto soluta aperiam laboriosam
+            alias. Illum ipsum sequi magnam nam...
+          </p>
+        </div>
+
+        <div class="extracto">
+          <h2 class="extracto__titular">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+            nemo quam corrupti eveniet sint.
+          </h2>
+
+          <p class="extracto__texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem
+            rem iusto odio ipsa impedit architecto soluta aperiam laboriosam
+            alias. Illum ipsum sequi magnam nam...
+          </p>
+        </div>
+
+        <div class="extracto">
+          <h2 class="extracto__titular">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+            nemo quam corrupti eveniet sint.
+          </h2>
+
+          <p class="extracto__texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem
+            rem iusto odio ipsa impedit architecto soluta aperiam laboriosam
+            alias. Illum ipsum sequi magnam nam...
+          </p>
+        </div>
+
+        <div class="extracto">
+          <h2 class="extracto__titular">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+            nemo quam corrupti eveniet sint.
+          </h2>
+
+          <p class="extracto__texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem
+            rem iusto odio ipsa impedit architecto soluta aperiam laboriosam
+            alias. Illum ipsum sequi magnam nam...
+          </p>
+        </div>
+
+        <div class="extracto">
+          <h2 class="extracto__titular">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+            nemo quam corrupti eveniet sint.
+          </h2>
+
+          <p class="extracto__texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem
+            rem iusto odio ipsa impedit architecto soluta aperiam laboriosam
+            alias. Illum ipsum sequi magnam nam...
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
