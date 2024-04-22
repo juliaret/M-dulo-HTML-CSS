@@ -27,7 +27,7 @@
       >
         <!--LOGO-->
         <a class="header__logo" href="#">
-          <img class="header__img" src="images/logo.jpeg" alt="" />
+          <img class="header__img" src="images/logo.png" alt="" />
         </a>
 
         <!--CESTA-->
@@ -62,52 +62,64 @@
       <img class="banner__img" src="images/banner-2000x800.jpg" alt="" />
 
       <!--CONTENIDO-->
-      <div class="banner__contenido flex">
+      <div class="banner__contenido contenedor flex">
         <!--TEXTO-->
         <p class="banner__texto col-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil velit
-          illo beatae! Ut nostrum doloremque aliquid suscipit assumenda quam, a
-          aspernatur tempore quod non ratione itaque fugiat enim sed maiores?
+          illo beatae! Ut nostrum doloremque aliquid suscipit assumenda quam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
+          aliquid quas ad illum nobis molestias, quasi error, optio, possimus
+          laborum molestiae nesciunt quaerat corrupti. Ratione laborum deleniti
+          optio.
         </p>
 
-        <!--FORMULARIO-->
         <div class="banner__formulario col-6">
-          <form action="">
+          <h2 class="banner__titular">
+            Lorem ipsum dolor sit amet consectetur
+          </h2>
+
+          <!--FORMULARIO-->
+          <form class="suscribirse" action="">
             <!--NOMBRE-->
-            <div class="form-floating mb-3">
+            <div>
               <input
                 type="text"
-                class="form-control"
-                id="nombre"
+                name=""
+                id=""
                 placeholder="Nombre y apellidos"
+                class="campo"
+                required
               />
-              <label for="nombre">Nombre y apellidos</label>
             </div>
 
             <!--CORREO-->
-            <div class="form-floating mb-3">
+            <div>
               <input
                 type="email"
-                class="form-control"
-                id="correo"
-                placeholder="nombreapellidos@ejemplo.com"
+                name=""
+                id=""
+                placeholder="Correo electrónico"
+                class="campo"
+                required
               />
-              <label for="correo">Correo electrónico</label>
             </div>
 
             <!--MENSAJE-->
-            <div class="form-floating mb-4">
+            <div>
               <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="mensaje"
-                style="height: 300px"
+                name=""
+                id=""
+                cols="30"
+                rows="8"
+                placeholder="Mensaje"
+                class="campo"
               ></textarea>
-              <label for="mensaje">Escribe aquí</label>
             </div>
 
             <!--ENVIAR-->
-            <button type="submit" class="btn btn-dark px-4">Enviar</button>
+            <div class="btn-submit text-center">
+              <input type="submit" value="Enviar" />
+            </div>
           </form>
         </div>
       </div>
@@ -125,22 +137,126 @@
           <span>15%</span>
           <img
             class="producto__img"
-            src="images/producto-1-600x400.jpg"
+            src="images/producto-1-600x600.jpg"
             alt=""
           />
           <h3 class="producto__nombre">
             Lorem ipsum dolor sit amet consectetur adipisicing elit
           </h3>
-          <p class="producto__precio">25€</p>
+
+          <p class="producto__precio">805 €</p>
+
           <div class="estrellas">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
             ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
             ><i class="bi bi-star-half"></i>
           </div>
 
-          <button class="producto__boton">
-            Comprar <i class="bi bi-bag-plus"></i>
-          </button>
+          <div class="text-center">
+            <button class="producto__boton">
+              Comprar <i class="bi bi-bag-plus icono-comprar"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="producto">
+          <img
+            class="producto__img"
+            src="images/producto-2-600x600.jpg"
+            alt=""
+          />
+          <h3 class="producto__nombre">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </h3>
+          <p class="producto__precio">795 €</p>
+          <div class="estrellas">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-half"></i>
+          </div>
+
+          <div class="text-center">
+            <button class="producto__boton">
+              Comprar <i class="bi bi-bag-plus icono-comprar"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="producto">
+          <img
+            class="producto__img"
+            src="images/producto-3-600x600.jpg"
+            alt=""
+          />
+          <h3 class="producto__nombre">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </h3>
+          <p class="producto__precio">540 €</p>
+          <div class="estrellas">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-half"></i>
+          </div>
+
+          <div class="text-center">
+            <button class="producto__boton">
+              Comprar <i class="bi bi-bag-plus icono-comprar"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="producto">
+          <img
+            class="producto__img"
+            src="images/producto-4-600x600.jpg"
+            alt=""
+          />
+          <h3 class="producto__nombre">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </h3>
+          <p class="producto__precio">955 €</p>
+          <div class="estrellas">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-half"></i>
+          </div>
+
+          <div class="text-center">
+            <button class="producto__boton">
+              Comprar <i class="bi bi-bag-plus icono-comprar"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="producto">
+          <img
+            class="producto__img"
+            src="images/producto-5-600x600.jpg"
+            alt=""
+          />
+          <h3 class="producto__nombre">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </h3>
+          <p class="producto__precio">540 €</p>
+          <div class="estrellas">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-half"></i>
+          </div>
+
+          <div class="text-center">
+            <button class="producto__boton">
+              Comprar <i class="bi bi-bag-plus icono-comprar"></i>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -149,168 +265,230 @@
           <span>15%</span>
           <img
             class="producto__img"
-            src="images/producto-1-600x400.jpg"
+            src="images/producto-6-600x600.jpg"
             alt=""
           />
           <h3 class="producto__nombre">
             Lorem ipsum dolor sit amet consectetur adipisicing elit
           </h3>
-          <p class="producto__precio">25€</p>
+          <p class="producto__precio">805 €</p>
           <div class="estrellas">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
             ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
             ><i class="bi bi-star-half"></i>
           </div>
 
-          <button class="producto__boton">
-            Comprar <i class="bi bi-bag-plus"></i>
-          </button>
+          <div class="text-center">
+            <button class="producto__boton">
+              Comprar <i class="bi bi-bag-plus icono-comprar"></i>
+            </button>
+          </div>
         </div>
       </div>
 
       <div class="col-3">
-        <div class="producto producto--oferta">
-          <span>15%</span>
+        <div class="producto">
           <img
             class="producto__img"
-            src="images/producto-1-600x400.jpg"
+            src="images/producto-7-600x600.jpg"
             alt=""
           />
           <h3 class="producto__nombre">
             Lorem ipsum dolor sit amet consectetur adipisicing elit
           </h3>
-          <p class="producto__precio">25€</p>
+          <p class="producto__precio">675 €</p>
           <div class="estrellas">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
             ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
             ><i class="bi bi-star-half"></i>
           </div>
 
-          <button class="producto__boton">
-            Comprar <i class="bi bi-bag-plus"></i>
-          </button>
+          <div class="text-center">
+            <button class="producto__boton">
+              Comprar <i class="bi bi-bag-plus icono-comprar"></i>
+            </button>
+          </div>
         </div>
       </div>
 
       <div class="col-3">
-        <div class="producto producto--oferta">
-          <span>15%</span>
+        <div class="producto">
           <img
             class="producto__img"
-            src="images/producto-1-600x400.jpg"
+            src="images/producto-8-600x600.jpg"
             alt=""
           />
           <h3 class="producto__nombre">
             Lorem ipsum dolor sit amet consectetur adipisicing elit
           </h3>
-          <p class="producto__precio">25€</p>
+          <p class="producto__precio">795 €</p>
           <div class="estrellas">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
             ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
             ><i class="bi bi-star-half"></i>
           </div>
 
-          <button class="producto__boton">
-            Comprar <i class="bi bi-bag-plus"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <div class="producto producto--oferta">
-          <span>15%</span>
-          <img
-            class="producto__img"
-            src="images/producto-1-600x400.jpg"
-            alt=""
-          />
-          <h3 class="producto__nombre">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit
-          </h3>
-          <p class="producto__precio">25€</p>
-          <div class="estrellas">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-            ><i class="bi bi-star-half"></i>
+          <div class="text-center">
+            <button class="producto__boton">
+              Comprar <i class="bi bi-bag-plus icono-comprar"></i>
+            </button>
           </div>
-
-          <button class="producto__boton">
-            Comprar <i class="bi bi-bag-plus"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <div class="producto producto--oferta">
-          <span>15%</span>
-          <img
-            class="producto__img"
-            src="images/producto-1-600x400.jpg"
-            alt=""
-          />
-          <h3 class="producto__nombre">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit
-          </h3>
-          <p class="producto__precio">25€</p>
-          <div class="estrellas">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-            ><i class="bi bi-star-half"></i>
-          </div>
-
-          <button class="producto__boton">
-            Comprar <i class="bi bi-bag-plus"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <div class="producto producto--oferta">
-          <span>15%</span>
-          <img
-            class="producto__img"
-            src="images/producto-1-600x400.jpg"
-            alt=""
-          />
-          <h3 class="producto__nombre">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit
-          </h3>
-          <p class="producto__precio">25€</p>
-          <div class="estrellas">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-            ><i class="bi bi-star-half"></i>
-          </div>
-
-          <button class="producto__boton">
-            Comprar <i class="bi bi-bag-plus"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <div class="producto producto--oferta">
-          <span>15%</span>
-          <img
-            class="producto__img"
-            src="images/producto-1-600x400.jpg"
-            alt=""
-          />
-          <h3 class="producto__nombre">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit
-          </h3>
-          <p class="producto__precio">25€</p>
-          <div class="estrellas">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-            ><i class="bi bi-star-half"></i>
-          </div>
-
-          <button class="producto__boton">
-            Comprar <i class="bi bi-bag-plus"></i>
-          </button>
         </div>
       </div>
     </section>
+
+    <!--SECCIÓN 3 - GALERÍA-->
+    <section class="galeria contenedor">
+      <p class="galeria__titular">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
+        iste sapiente? Impedit rem totam, tempore, optio, eligendi fugiat
+        officiis esse nam harum repudiandae repellendus? Ex veniam dolor ipsam
+        necessitatibus dicta.
+      </p>
+
+      <section class="imagenes flex wrap">
+        <div class="imagenes__foto col-4">
+          <img src="images/galeria-foto-1.jpg" alt="" />
+
+          <div class="imagenes__caption">
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="imagenes__foto col-4">
+          <img src="images/galeria-foto-2.jpg" alt="" />
+
+          <div class="imagenes__caption">
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="imagenes__foto col-4">
+          <img src="images/galeria-foto-3.jpg" alt="" />
+
+          <div class="imagenes__caption">
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="imagenes__foto col-4">
+          <img src="images/galeria-foto-4.jpg" alt="" />
+
+          <div class="imagenes__caption">
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="imagenes__foto col-4">
+          <img src="images/galeria-foto-5.jpg" alt="" />
+
+          <div class="imagenes__caption">
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="imagenes__foto col-4">
+          <img src="images/galeria-foto-6.jpg" alt="" />
+
+          <div class="imagenes__caption">
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!--SECCIÓN 4 - NOSOTROS-->
+    <section class="nosotros contenedor flex wrap">
+      <div class="col-6 nosotros__img">
+        <img
+          class="nosotros__img__foto"
+          src="images/nosotros-foto-1.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="mas-info col-6">
+        <img class="mas-info__img" src="images/nosotros-foto-2.jpg" alt="" />
+        <p class="mas-info__texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          blanditiis, cumque saepe aspernatur voluptate adipisci! Sapiente,
+          doloribus temporibus quisquam molestias assumenda vitae. Voluptas
+          excepturi sit modi assumenda esse quaerat dolore.
+        </p>
+        <div class="text-center">
+          <button class="mas-info__boton">Más info</button>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+      <!--RRSS-->
+      <section class="footer__social">
+        <a class="footer__link" href="#"><i class="bi bi-linkedin"></i></a>
+        <a class="footer__link" href="#"><i class="bi bi-instagram"></i></a>
+        <a class="footer__link" href="#"><i class="bi bi-twitter-x"></i></a>
+      </section>
+
+      <!--CONTENIDO-->
+      <section class="footer__contenido flex wrap text-center">
+        <!--MARCA-->
+        <div class="marca col-3">
+          <img class="marca__logo" src="images/logo-footer.svg" alt="" />
+          <p class="marca__copyright">
+            JR TUSTING & CO LTD • Copyright 2024 • All Rights Reserved
+          </p>
+        </div>
+
+        <!--LINKS-->
+        <div class="links col-3">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Guarantee</a></li>
+            <li><a href="#">Stockists</a></li>
+          </ul>
+        </div>
+
+        <!--NEWSLETTER-->
+        <div class="newsletter col-3">
+          <p class="newsletter__titulo">
+            Sign up for Tusting stories, seasonal updates and VIP sales
+            information.
+          </p>
+
+          <!--FORMULARIO-->
+          <form class="suscribirse" action="">
+            <!--CORREO-->
+            <div>
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Correo electrónico"
+                class="campo"
+                required
+              />
+            </div>
+
+            <!--ENVIAR-->
+            <div class="btn-submit text-center">
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+
+        <!--INFORMACION-->
+        <div class="informacion col-3">
+          <p>+44 (0) 1 234 712266</p>
+          <p>The Tannery Warehouse, Olney Road</p>
+          <p>Lavendon, OLNEY</p>
+          <p>Buckinghamshire</p>
+          <p>United Kingdom</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
