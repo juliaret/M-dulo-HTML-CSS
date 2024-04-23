@@ -6,9 +6,9 @@
 
 .nav {
   background-color: $color-azul;
-  .nav__link {
+  &__link {
     display: block;
-    padding: 0.5em;
+    padding: 0.6em;
     color: $color-blanco;
     border: 1px solid $color-blanco;
     &:hover,
@@ -23,10 +23,10 @@
 
 @media (min-width: 768px) {
   .nav {
-    .nav__link {
+    &__link {
       display: inline-block;
       border: none;
-      padding: 0.5em 1em;
+      padding: 0.6em 1em;
     }
   }
 }
