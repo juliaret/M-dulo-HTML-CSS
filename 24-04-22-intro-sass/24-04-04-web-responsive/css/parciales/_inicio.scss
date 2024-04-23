@@ -1,12 +1,103 @@
 /*PÁGINA INICIO*/
 
+section {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.productos {
+  &__titular {
+    text-align: center;
+    margin: 1em 0;
+  }
+  &__card {
+    display: grid;
+    gap: 2em 0;
+  }
+}
+
+.card {
+  border: 1px solid $color-azul;
+  &__texto {
+    margin: 1em 0;
+    padding: 0.5em;
+  }
+  &__img {
+    width: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    &:hover {
+      opacity: 0.5;
+      transition: all 0.5s ease;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+  }
+}
+
+.servicios {
+  display: grid;
+  gap: 1em 0;
+  &__titular {
+    text-align: center;
+  }
+  &__contenido {
+    display: grid;
+    gap: 1em 0;
+  }
+
+  &__img {
+    @extend .card__img;
+  }
+  &__texto {
+    p {
+      padding: 0.5em;
+    }
+  }
+}
+
+.btn {
+  @include btn;
+}
+
 @media (min-width: 576px) {
 }
+
 @media (min-width: 768px) {
+  section {
+    width: 70%;
+  }
+
+  .productos {
+    &__card {
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+    }
+  }
 }
+
 @media (min-width: 992px) {
+  .servicios {
+    &__contenido {
+      gap: 1em;
+      grid-template-columns: 1fr 1fr;
+
+      &--revert {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+  }
 }
+
 @media (min-width: 1200px) {
+  .productos {
+    &__card {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
+
 @media (min-width: 1400px) {
 }

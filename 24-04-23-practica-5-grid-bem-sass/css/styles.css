@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap");
+/*ESTILOS GENERALES*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Hedvig Letters Sans", sans-serif;
+}
+
+/*HEADER*/
+.header {
+  text-align: center;
+}
+
+.nav {
+  background-color: rgb(131, 188, 232);
+}
+.nav .nav__link {
+  display: block;
+  padding: 0.5em;
+  color: white;
+  border: 1px solid white;
+}
+.nav .nav__link:hover, .nav .nav__link--active {
+  background-color: rgb(70, 99, 174);
+}
+
+@media (min-width: 768px) {
+  .nav .nav__link {
+    display: inline-block;
+    border: none;
+    padding: 0.5em 1em;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+}
+/*INICIO*/
+section {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.servicios__principal {
+  background-color: rgb(231, 231, 231);
+}
+
+.servicios__principal__titular {
+  margin-bottom: 1em;
+}
+
+.servicios__lateral {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .servicios__lateral {
+    display: block;
+  }
+}
+/*FOOTER*//*# sourceMappingURL=styles.css.map */

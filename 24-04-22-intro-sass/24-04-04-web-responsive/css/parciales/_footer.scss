@@ -1,12 +1,48 @@
 /*FOOTER*/
 
+.footer {
+  padding: 1em;
+  background-color: $color-azul;
+  text-align: center;
+  color: $color-blanco;
+
+  &__contenedor {
+    display: grid;
+    gap: 1em 0;
+  }
+  &__logo {
+    text-align: left;
+  }
+  &__texto {
+  }
+  &__social {
+    text-align: right;
+    a {
+      color: inherit;
+      margin: 0 0.5em;
+    }
+  }
+}
+
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {
+  .footer {
+    &__contenedor {
+      gap: 1em;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
 }
 @media (min-width: 992px) {
 }
 @media (min-width: 1200px) {
+  .footer {
+    &__contenedor {
+      grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+    }
+  }
 }
 @media (min-width: 1400px) {
 }

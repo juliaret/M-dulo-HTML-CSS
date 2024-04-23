@@ -3,3 +3,19 @@ $tipo-titular: 'Philosopher', sans-serif;
 $color-azul: rgb(113, 148, 215);
 $color-negro: black;
 $color-blanco: white;
+
+@mixin btn {
+  display: inline-block;
+  background-color: $color-azul;
+  border: 1px solid $color-azul;
+  color: $color-blanco;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  margin: 1em 0;
+  &:hover {
+    background-color: $color-blanco;
+    color: $color-azul;
+    transition: all 0.5s ease;
+  }
+}

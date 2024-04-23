@@ -1,0 +1,33 @@
+/*INICIO*/
+
+section {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.servicios__principal {
+  background-color: $color-gris-claro;
+}
+
+.servicios__principal__titular {
+  margin-bottom: 1em;
+}
+
+.servicios__lateral {
+  display: none;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .servicios__lateral {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+}

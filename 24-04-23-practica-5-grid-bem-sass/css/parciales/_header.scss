@@ -2,22 +2,18 @@
 
 .header {
   text-align: center;
-  padding: 0.5em;
 }
 
 .nav {
   background-color: $color-azul;
   .nav__link {
     display: block;
+    padding: 0.5em;
     color: $color-blanco;
-    padding: 1em;
     border: 1px solid $color-blanco;
-    text-transform: uppercase;
     &:hover,
-    &--activo {
-      background-color: $color-blanco;
-      color: $color-azul;
-      border: 1px solid $color-azul;
+    &--active {
+      background-color: $color-azul-oscuro;
     }
   }
 }
@@ -30,19 +26,19 @@
     .nav__link {
       display: inline-block;
       border: none;
-      &:hover,
-      &--activo {
-        border: none;
-      }
+      padding: 0.5em 1em;
     }
   }
 }
+
 @media (min-width: 992px) {
 }
+
 @media (min-width: 1200px) {
-  .nav {
-    text-align: right;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
   }
-}
-@media (min-width: 1400px) {
 }
