@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+section {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.principal__titulo {
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.videos {
+  display: grid;
+  gap: 30px;
+}
+.videos .video__titulo {
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .videos {
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=styles.css.map */

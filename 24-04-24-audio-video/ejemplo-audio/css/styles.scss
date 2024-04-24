@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  width: 80%;
+  margin: 60px auto;
+}
+
+.album {
+  border: 2px solid rgb(145, 20, 20);
+  padding: 2em 1em;
+  &__titulo,
+  &__descripcion,
+  &__portada {
+    margin-bottom: 1em;
+  }
+}
+
+.canciones {
+  border: 2px solid rgb(145, 20, 20);
+  padding: 2em 1em;
+  &__contenido {
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+section {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.principal {
+  &__titulo {
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+  }
+}
+
+.videos {
+  display: grid;
+  gap: 30px;
+  .video {
+    &__titulo {
+      text-align: center;
+      margin: 20px 0;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .videos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
