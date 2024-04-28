@@ -1,0 +1,281 @@
+/*INICIO*/
+
+body {
+  background-color: $color-negro;
+}
+
+.suscripcion {
+  position: relative;
+
+  &__img-mobile {
+    display: block;
+  }
+
+  &__img-tablet {
+    display: none;
+  }
+
+  &__img-desktop {
+    display: none;
+  }
+
+  &__img-desktop-lg {
+    display: none;
+  }
+
+  &__contenido {
+    position: absolute;
+    top: 0;
+    left: 1%;
+    right: 1%;
+    padding: 10%;
+    text-align: center;
+
+    &__titulo {
+      color: $color-blanco;
+      font-size: $font-xl;
+      margin-bottom: $margin-md;
+    }
+
+    &__subtitulo {
+      color: $color-blanco;
+      font-size: $font-md;
+      margin-bottom: $margin-lg;
+      line-height: 1.3;
+      display: none;
+    }
+
+    &__titulo-formulario {
+      color: $color-blanco;
+      font-size: $font-sm;
+      margin-bottom: $margin-md;
+      line-height: 1.2;
+    }
+
+    &__pie {
+      color: $color-blanco;
+      line-height: 1.2;
+      display: none;
+    }
+  }
+}
+
+.formulario {
+  &__campo {
+    &__email {
+      background-color: $color-azul-oscuro;
+      border: 2px solid $color-gris;
+      padding: $padding-md;
+      border-radius: $border-radius;
+      width: 250px;
+      font-size: $font-sm;
+      color: $color-blanco;
+      margin-bottom: $margin-lg;
+    }
+  }
+
+  &__boton {
+    &__btn {
+      display: inline-block;
+      padding: $padding-md;
+      border-radius: $border-radius;
+      border: 2px solid $color-verde;
+      background-color: $color-verde;
+      color: $color-negro;
+      font-weight: 600;
+      font-size: $font-sm;
+      &:hover {
+        background-color: $color-verde-claro;
+        border: 2px solid $color-verde-claro;
+      }
+    }
+  }
+}
+
+.audiovisual {
+  width: 90%;
+  margin: 50px auto;
+
+  &__titulo {
+    color: $color-blanco;
+    margin-bottom: $margin-md;
+  }
+
+  &__contenido {
+    &__imagen {
+      padding-bottom: $padding-md;
+
+      &__img {
+        border-radius: $border-radius;
+      }
+    }
+  }
+}
+
+.card {
+  display: none;
+}
+
+.col-3 {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .suscripcion {
+    &__img-mobile {
+      display: none;
+    }
+
+    &__img-tablet {
+      display: block;
+    }
+
+    &__contenido {
+      top: 5%;
+      bottom: 5%;
+      padding: 5% 10%;
+
+      &__subtitulo {
+        display: block;
+      }
+
+      &__pie {
+        display: block;
+      }
+    }
+  }
+
+  .formulario {
+    &__boton {
+      &__btn {
+        margin-bottom: $margin-lg;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .suscripcion {
+    &__img-tablet {
+      display: none;
+    }
+
+    &__img-desktop {
+      display: block;
+    }
+
+    &__contenido {
+      padding: 5% 10%;
+    }
+  }
+
+  .formulario {
+    display: flex;
+    justify-content: center;
+    &__boton {
+      &__btn {
+        margin: 0 0 $margin-lg $margin-md;
+      }
+    }
+  }
+
+  .audiovisual {
+    &__contenido {
+      &__imagen {
+        padding: 0 $padding-md $padding-md 0;
+      }
+    }
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .suscripcion {
+    &__img-desktop {
+      display: none;
+    }
+
+    &__img-desktop-lg {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .audiovisual {
+    &__contenido {
+      &__imagen {
+        position: relative;
+      }
+    }
+  }
+
+  .card {
+    display: block;
+    position: absolute;
+    background-color: $color-azul-oscuro;
+    color: $color-blanco;
+    border: 1px solid $color-gris;
+    border-radius: $border-radius;
+    opacity: 0;
+    transition: $transicion-rapida;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+
+    &__titulo {
+      margin: $margin-md;
+    }
+    &__sinopsis {
+      line-height: 1.2;
+      margin: $margin-md;
+    }
+  }
+
+  .audiovisual__contenido__imagen:hover .card {
+    opacity: 1;
+    transition: $transicion-rapida;
+    transform: scale(1.1);
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}

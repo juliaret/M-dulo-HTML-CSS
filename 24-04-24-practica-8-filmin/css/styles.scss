@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "graphik";
+  src: url(../fonts/graphik/GraphikRegular.otf);
+}
+
+@font-face {
+  font-family: "graphik-bold";
+  src: url(../fonts/graphik/GraphikBold.otf);
+}
+
+@import "./parciales/variables";
+@import "./parciales/generales";
+@import "./parciales/header";
+@import "./parciales/inicio";
+@import "./parciales/peliculas";
+@import "./parciales/ficha-pelicula";
+@import "./parciales/footer";

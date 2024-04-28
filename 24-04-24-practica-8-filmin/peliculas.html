@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmin - Películas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./media/images/favicon.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="menu-hamburguesa">
+        <i class="bi bi-list menu-hamburguesa__barras"></i>
+        <i class="bi bi-x menu-hamburguesa__cruz"></i>
+      </div>
+
+      <a class="header__logo" href="./inicio.html">
+        <img class="header__logo__img" src="./media/images/logo.png" alt="" />
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="./inicio.html">Inicio</a>
+        <a class="nav__link" href="./peliculas.html">Películas</a>
+        <a class="nav__link" href="#">Series</a>
+        <a class="nav__link" href="#">Colecciones</a>
+        <a class="nav__link" href="#">Festivales</a>
+      </nav>
+
+      <div class="header__botones">
+        <button class="header__botones__btn header__botones__btn--destacado">
+          SUSCRÍBETE
+        </button>
+        <button class="header__botones__btn">INICIAR SESIÓN</button>
+      </div>
+
+      <div class="header__search">
+        <i class="bi bi-search"></i>
+      </div>
+    </header>
+
+    <!--DESPLEGABLES-->
+    <section class="desplegables flex wrap">
+      <!--TIPO DE CONTENIDO-->
+      <nav class="obra">
+        <ul class="lista">
+          <li class="lista__visible">
+            <a class="lista__visible__link" href="./peliculas.html"
+              >Películas <i class="bi bi-chevron-down flecha-menu"></i
+            ></a>
+            <ul class="sublista">
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Todo</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a
+                  class="sublista__oculto__link sublista__oculto__link--active"
+                  href="./peliculas.html"
+                  >Películas</a
+                >
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Series</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Cortos</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!--GÉNERO-->
+      <nav class="genero">
+        <ul class="lista">
+          <li class="lista__visible">
+            <a class="lista__visible__link" href="#"
+              >Todos los géneros <i class="bi bi-chevron-down flecha-menu"></i
+            ></a>
+
+            <ul class="sublista">
+              <li class="sublista__oculto">
+                <a
+                  class="sublista__oculto__link sublista__oculto__link--active"
+                  href="#"
+                  >Todos los géneros</a
+                >
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Acción</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Animación</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Ciencia ficción</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Comedia</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Documental</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Drama</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Musical</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Romántica</a>
+              </li>
+
+              <li class="sublista__oculto">
+                <a class="sublista__oculto__link" href="#">Terror</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!--Nº PELÍCULAS-->
+    <section class="numero">
+      <h3 class="numero__texto">10834 películas</h3>
+    </section>
+
+    <!--PELÍCULAS-->
+    <section class="peliculas">
+      <div class="portada">
+        <a class="portada__enlace" href="./fallen-leaves.html">
+          <img class="fondo" src="./media/images/peliculas-1.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">Fallen Leaves</h3>
+              <p class="superposicion__texto__direccion">Aki Kaurismäki</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7.6</h4>
+          </div>
+
+          <div class="info">
+            <div>
+              <h4>Solo para suscriptores</h4>
+              <p>2023 · 1h 21min</p>
+            </div>
+
+            <p>
+              Indiscutible obra maestra. El legendario director finlandés Aki
+              Kaurismäki dedica su nueva película a una maravillosa, tierna y,
+              sobre todo humana historia de amor bañada en vodka.
+            </p>
+
+            <div>
+              <button>
+                <i class="bi bi-clock-fill"></i>
+              </button>
+
+              <button>
+                <i class="bi bi-heart-fill"></i>
+              </button>
+
+              <button>GUARDAR</button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-2.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">
+                Ashkal, los crímenes de Túnez
+              </h3>
+              <p class="superposicion__texto__direccion">Youssef Chebbi</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">6</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-3.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">
+                En busca de Summerland
+              </h3>
+              <p class="superposicion__texto__direccion">Jessica Swale</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7.6</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-4.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">La buena esposa</h3>
+              <p class="superposicion__texto__direccion">Björn Runge</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7.7</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-5.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">Silent Night</h3>
+              <p class="superposicion__texto__direccion">Camille Griffin</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">6.7</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-6.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">Radical Wolfe</h3>
+              <p class="superposicion__texto__direccion">Richard Dewey</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">8</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-7.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">
+                Anatomía de una caída
+              </h3>
+              <p class="superposicion__texto__direccion">Justine Triet</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7.8</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-8.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">
+                Las canciones de la tierra
+              </h3>
+              <p class="superposicion__texto__direccion">Margreth Olin</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">8.6</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-9.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">La jauría</h3>
+              <p class="superposicion__texto__direccion">
+                Andrés Ramírez Pulido
+              </p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7.1</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-10.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">Cinéma Laika</h3>
+              <p class="superposicion__texto__direccion">Veljko Vidak</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">8</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-11.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">La Mif (La familia)</h3>
+              <p class="superposicion__texto__direccion">Frédéric Baillif</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7.4</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-12.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">Éxodo</h3>
+              <p class="superposicion__texto__direccion">Abbe Hassan</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7.7</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-13.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">
+                El libro de las soluciones
+              </h3>
+              <p class="superposicion__texto__direccion">Michel Gondry</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">6.4</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-14.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">Vidas Pasadas</h3>
+              <p class="superposicion__texto__direccion">Celine Song</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">8</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-15.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">Beyond Utopia</h3>
+              <p class="superposicion__texto__direccion">Madeleine Gavin</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">8.4</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-16.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">Séneca</h3>
+              <p class="superposicion__texto__direccion">Robert Schwentke</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">6.5</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-17.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">Sobre todo de noche</h3>
+              <p class="superposicion__texto__direccion">Víctor Iriarte</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">6.3</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-18.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">El sastre</h3>
+              <p class="superposicion__texto__direccion">
+                Sonia Liza Kenterman
+              </p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7.5</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-19.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">
+                El árbol de las mariposas doradas
+              </h3>
+              <p class="superposicion__texto__direccion">Pham Thien An</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="portada">
+        <a class="portada__enlace" href="#">
+          <img class="fondo" src="./media/images/peliculas-20.jpg" alt="" />
+
+          <div class="superposicion flex">
+            <div class="superposicion__texto">
+              <h3 class="superposicion__texto__titulo">El tiempo del amor</h3>
+              <p class="superposicion__texto__direccion">Katell Quillevéré</p>
+            </div>
+
+            <h4 class="superposicion__calificacion">7.6</h4>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="panel-1">
+        <!--LINKS-->
+        <div class="footer__links">
+          <a class="footer__links__enlace" href="https://ayuda.filmin.es/"
+            >Centro de Ayuda</a
+          >
+          <a
+            class="footer__links__enlace"
+            href="https://ayuda.filmin.es/contacta-con-nosotros/atencion-al-cliente/contacto"
+            >Contacto</a
+          >
+          <a class="footer__links__enlace" href="https://www.filmin.es/codigo"
+            >Canjear código</a
+          >
+          <a class="footer__links__enlace" href="https://www.filmin.es/regala"
+            >Regala Filmin</a
+          >
+          <a
+            class="footer__links__enlace"
+            href="https://www.filmin.es/aviso-legal"
+            >Aviso Legal</a
+          >
+          <a class="footer__links__enlace" href="https://prensa.filmin.es/"
+            >Prensa</a
+          >
+          <a class="footer__links__enlace" href="#"
+            >Cambiar preferencias de cookies</a
+          >
+        </div>
+
+        <!--RRSS-->
+        <div class="footer__rrss">
+          <i class="bi bi-twitter footer__rrss__logo"></i>
+          <i class="bi bi-instagram footer__rrss__logo"></i>
+          <i class="bi bi-linkedin footer__rrss__logo"></i>
+          <i class="bi bi-pinterest footer__rrss__logo"></i>
+        </div>
+      </div>
+
+      <!--SUBVENCIONES-->
+      <div class="panel-2 flex wrap">
+        <div class="footer__subvenciones col-7 flex wrap">
+          <a href="https://culture.ec.europa.eu/" class="col-4">
+            <img
+              class="footer__subvenciones__logo"
+              src="./media/images/europa-creativa-media-logo-gris.png"
+              alt=""
+            />
+          </a>
+
+          <a href="#" class="col-4">
+            <img
+              class="footer__subvenciones__logo"
+              src="./media/images/ministerio-de-cultura-logo-gris.png"
+              alt=""
+            />
+          </a>
+
+          <a href="https://cultura.gencat.cat/ca/inici/" class="col-4">
+            <img
+              class="footer__subvenciones__logo"
+              src="./media/images/generalitat_de_catalunya-departament_de_cultura-logo-gris.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

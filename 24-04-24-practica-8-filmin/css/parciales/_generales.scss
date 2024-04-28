@@ -1,0 +1,39 @@
+/*ESTILOS GENERALES*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body,
+button,
+input {
+  font-family: $tipo-cuerpo;
+}
+
+h1 {
+  font-family: $tipo-titulares;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}

@@ -1,0 +1,153 @@
+/*HEADER*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-negro;
+  padding: $padding-sm $padding-lg;
+  align-items: center;
+
+  &:hover .menu-hamburguesa__cruz {
+    display: block;
+  }
+  &:hover .menu-hamburguesa__barras {
+    display: none;
+  }
+
+  &:hover .nav {
+    left: 0%;
+    transition: $transicion-simple;
+  }
+
+  &:hover .header__botones {
+    left: 0%;
+    transition: $transicion-simple;
+  }
+
+  &__botones {
+    position: absolute;
+    background-color: $color-gris-oscuro;
+    left: -250px;
+    width: 250px;
+    top: 400px;
+    padding: 0 $padding-lg $padding-lg $padding-lg;
+    transition: $transicion-simple;
+    z-index: 1;
+
+    &__btn {
+      padding: $padding-md;
+      border-radius: $border-radius;
+      border: 2px solid $color-blanco;
+      background-color: transparent;
+      color: $color-blanco;
+      font-weight: 600;
+      font-size: $font-sm;
+      width: 180px;
+      margin: $margin-md 0;
+
+      &:hover {
+        color: $color-verde;
+        border: 2px solid $color-verde;
+      }
+
+      &--destacado {
+        background-color: $color-verde;
+        border: 2px solid $color-verde;
+        color: $color-negro;
+        
+        &:hover {
+          background-color: $color-verde-claro;
+          color: $color-negro;
+          border: 2px solid $color-verde-claro;
+        }
+      }
+    }
+  }
+
+  &__search {
+    color: $color-blanco;
+    font-size: $font-lg;
+    &:hover {
+      color: $color-verde;
+    }
+  }
+}
+
+.menu-hamburguesa {
+  &__barras {
+    color: $color-blanco;
+    font-size: $font-xxl;
+    display: block;
+  }
+  &__cruz {
+    color: $color-blanco;
+    font-size: $font-xxl;
+    display: none;
+  }
+}
+
+.nav {
+  position: absolute;
+  background-color: $color-gris-oscuro;
+  left: -250px;
+  width: 250px;
+  top: 60px;
+  padding: $padding-lg;
+  transition: $transicion-simple;
+  z-index: 1;
+
+  &__link {
+    color: $color-blanco;
+    padding: $padding-md 0;
+    display: block;
+    font-size: $font-md;
+
+    &:hover {
+      color: $color-verde;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: $padding-md $padding-xxl;
+    &__botones {
+      position: static;
+      background-color: transparent;
+      width: auto;
+      padding: 0;
+
+      &__btn {
+        margin: 0 $margin-md;
+        font-size: $font-xs;
+        width: auto;
+      }
+    }
+  }
+
+  .nav {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+
+    &__link {
+      display: inline-block;
+      padding: 0 $padding-sm;
+      font-size: $font-sm;
+    }
+  }
+
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+}
