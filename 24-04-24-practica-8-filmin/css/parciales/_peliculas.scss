@@ -108,17 +108,22 @@
 
 .superposicion {
   color: $color-blanco;
-  background: rgb(175, 175, 175);
-  background: linear-gradient(
-    180deg,
-    rgba(175, 175, 175, 0.499124649859944) 0%,
-    rgba(0, 0, 0, 0.8436624649859944) 100%
-  );
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: end; /*para que se alineen abajo*/
 
   &__texto {
-    position: absolute;
+    /*position: absolute;
     bottom: 15px;
-    left: 18px;
+    left: 18px;*/
+    margin: $margin-sm;
 
     &__titulo {
       margin-bottom: $margin-sm;
@@ -132,15 +137,59 @@
     width: 40px;
     text-align: center;
     border-radius: $border-radius;
+    margin: $margin-sm;
+    /*
     position: absolute;
     bottom: 18px;
-    right: 20px;
+    right: 20px;*/
   }
 }
 
 .info {
   position: absolute;
   top: 0;
+  background-color: $color-negro-transparente;
+  color: $color-blanco;
+  padding: $padding-md;
+  height: 100%;
+  opacity: 0;
+  transition: $transicion-simple;
+
+  &__general {
+    justify-content: space-between;
+    margin-bottom: $margin-sm;
+
+    &__titulo {
+      color: $color-verde;
+    }
+  }
+
+  &__descripcion {
+    line-height: 1.2;
+  }
+
+  &__acciones {
+    position: absolute;
+    bottom: 8px;
+    right: 9px;
+
+    &__boton {
+      background-color: $color-negro;
+      color: $color-blanco;
+      padding: $padding-sm;
+      border: none;
+      font-size: $font-sm;
+      border-radius: $border-radius;
+      &:hover {
+        background-color: $color-gris;
+      }
+    }
+  }
+}
+
+.portada__enlace:hover .info {
+  opacity: 1;
+  transition: $transicion-simple;
 }
 
 @media (min-width: 576px) {
