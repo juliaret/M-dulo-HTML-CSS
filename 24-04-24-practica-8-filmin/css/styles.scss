@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "graphik-medium";
+  src: url(../fonts/graphik/GraphikMedium.otf);
+}
+
+@font-face {
   font-family: "graphik-bold";
   src: url(../fonts/graphik/GraphikBold.otf);
 }
@@ -13,5 +18,5 @@
 @import "./parciales/header";
 @import "./parciales/inicio";
 @import "./parciales/peliculas";
-@import "./parciales/ficha-pelicula";
+@import "./parciales/fallen-leaves";
 @import "./parciales/footer";

@@ -4,6 +4,10 @@
   src: url(../fonts/graphik/GraphikRegular.otf);
 }
 @font-face {
+  font-family: "graphik-medium";
+  src: url(../fonts/graphik/GraphikMedium.otf);
+}
+@font-face {
   font-family: "graphik-bold";
   src: url(../fonts/graphik/GraphikBold.otf);
 }
@@ -511,6 +515,7 @@ body {
 .superposicion__texto__titulo {
   margin-bottom: 0.5em;
   font-size: 1em;
+  font-family: "graphik-medium";
 }
 .superposicion__calificacion {
   background-color: #6f6f81;
@@ -538,12 +543,14 @@ body {
 .info__general {
   justify-content: space-between;
   margin-bottom: 0.5em;
+  font-size: 0.9em;
 }
 .info__general__titulo {
   color: #02ef97;
 }
 .info__descripcion {
   line-height: 1.2;
+  font-size: 0.9em;
 }
 .info__acciones {
   position: absolute;
@@ -557,6 +564,7 @@ body {
   border: none;
   font-size: 1em;
   border-radius: 5px;
+  font-family: "graphik-medium";
 }
 .info__acciones__boton:hover {
   background-color: #6f6f81;
@@ -606,6 +614,128 @@ body {
   }
 }
 /*FICHA PELÍCULA*/
+.intro {
+  position: relative;
+}
+
+.trailer {
+  width: 100%;
+}
+
+.inf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.contenedor {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.principal {
+  color: white;
+}
+.principal__poster {
+  height: 180px;
+  margin-right: 1.5em;
+  display: none;
+}
+
+.descripcion__nota {
+  margin-bottom: 1.5em;
+}
+.descripcion__nota__numerica {
+  border: 1px solid white;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+.descripcion__nota__general {
+  margin-left: 0.5em;
+}
+.descripcion__nota__general__votos {
+  margin-bottom: 0.5em;
+}
+.descripcion__titulo {
+  font-size: 2em;
+  font-family: "graphik-bold";
+  margin-bottom: 0.5em;
+}
+.descripcion__direccion {
+  margin-bottom: 1em;
+}
+.descripcion__detalles {
+  align-items: center;
+}
+.descripcion__detalles__fecha {
+  margin-right: 0.5em;
+}
+.descripcion__detalles__idioma {
+  border: 2px solid #6f6f81;
+  border-radius: 5px;
+  padding: 0.3em 0.5em;
+  font-size: 0.8em;
+  margin: 0 0.5em;
+}
+.descripcion__detalles__idioma--edad {
+  background-color: #6f6f81;
+}
+
+.secundario {
+  color: #838389;
+  font-family: "graphik-medium";
+  max-width: 800px;
+  margin: 1.5em 0;
+}
+
+@media (min-width: 992px) {
+  .principal__poster {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
 /*FOOTER*/
 .footer__links {
   padding: 1em;
