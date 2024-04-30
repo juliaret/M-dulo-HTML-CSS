@@ -52,23 +52,28 @@
     <section class="intro">
       <video
         src="./media/video/fallen-leaves-trailer.mp4"
+        autoplay
         muted
         loop
         class="trailer"
       ></video>
 
+      <img
+        class="mobile-background"
+        src="./media/images/poster-fallen-leaves-horizontal.webp"
+        alt=""
+      />
+
       <div class="inf">
         <div class="contenedor">
           <div class="principal flex">
-            <div class="col-2">
-              <img
-                class="principal__poster"
-                src="./media/images/poster-fallen-leaves.jpg"
-                alt=""
-              />
-            </div>
+            <img
+              class="principal__poster"
+              src="./media/images/poster-fallen-leaves.jpg"
+              alt=""
+            />
 
-            <div class="descripcion col-10">
+            <div class="descripcion">
               <div class="descripcion__nota flex">
                 <h4 class="descripcion__nota__numerica">7.5</h4>
                 <div class="descripcion__nota__general">
@@ -82,19 +87,28 @@
                 Aki Kaurismäki · Comedia, Drama
               </h3>
 
-              <div class="descripcion__detalles flex">
+              <div class="descripcion__detalles flex wrap">
                 <h4 class="descripcion__detalles__fecha">2023 · 1h 18min</h4>
-                <p
-                  class="descripcion__detalles__idioma descripcion__detalles__idioma--edad"
-                >
-                  12+
-                </p>
-                <p class="descripcion__detalles__idioma">HD</p>
-                <p class="descripcion__detalles__idioma">VE</p>
-                <p class="descripcion__detalles__idioma">VO</p>
-                <p class="descripcion__detalles__idioma">VOSE</p>
-                <p class="descripcion__detalles__idioma">VOSG</p>
-                <p class="descripcion__detalles__idioma">VOSC</p>
+
+                <div class="descripcion__detalles__clasificacion flex">
+                  <p
+                    class="descripcion__detalles__clasificacion__idioma descripcion__detalles__clasificacion__idioma--edad"
+                  >
+                    12+
+                  </p>
+                  <p class="descripcion__detalles__clasificacion__idioma">HD</p>
+                  <p class="descripcion__detalles__clasificacion__idioma">VE</p>
+                  <p class="descripcion__detalles__clasificacion__idioma">VO</p>
+                  <p class="descripcion__detalles__clasificacion__idioma">
+                    VOSE
+                  </p>
+                  <p class="descripcion__detalles__clasificacion__idioma">
+                    VOSG
+                  </p>
+                  <p class="descripcion__detalles__clasificacion__idioma">
+                    VOSC
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -105,27 +119,37 @@
             sobre todo humana historia de amor bañada en vodka.
           </p>
 
-          <div class="terciario">
-            <div class="terciario__botones">
-              <button class="terciario__botones__btn">
+          <div class="terciario flex wrap">
+            <div class="terciario__botones flex">
+              <button
+                class="terciario__botones__btn terciario__botones__btn--destacado"
+              >
                 <i class="bi bi-play-circle icono"></i> SUSCRÍBETE
               </button>
-              <button class="terciario__botones__btn">
-                <i class="bi bi-display icono"></i> VER TRÁILER
-              </button>
+
+              <div class="boton-trailer">
+                <a
+                  class="terciario__botones__btn"
+                  href="./fallen-leaves-trailer.html"
+                  ><i class="bi bi-display icono"></i> VER TRÁILER</a
+                >
+              </div>
+
               <button class="terciario__botones__btn">
                 <i class="bi bi-clock-fill icono"></i> VER DESPUÉS
               </button>
             </div>
 
-            <div class="terciario__botones">
-              <button class="terciario__botones__btn">
-                <i class="bi bi-bookmark-plus-fill icono"></i> GUARDAR
+            <div class="terciario__acciones flex wrap">
+              <button class="terciario__acciones__btn">
+                <i class="bi bi-bookmark-fill icono"></i> GUARDAR
               </button>
-              <button class="terciario__botones__btn">
+
+              <button class="terciario__acciones__btn">
                 <i class="bi bi-star-fill icono"></i> VALORAR
               </button>
-              <button class="terciario__botones__btn">
+
+              <button class="terciario__acciones__btn">
                 <i class="bi bi-share-fill icono"></i> COMPARTIR
               </button>
             </div>

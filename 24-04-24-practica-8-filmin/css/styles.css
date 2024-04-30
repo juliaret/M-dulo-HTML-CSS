@@ -619,17 +619,11 @@ body {
 }
 
 .trailer {
-  width: 100%;
+  display: none;
 }
 
-.inf {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.mobile-background {
   width: 100%;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%);
 }
 
 .contenedor {
@@ -673,16 +667,18 @@ body {
   align-items: center;
 }
 .descripcion__detalles__fecha {
-  margin-right: 0.5em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
-.descripcion__detalles__idioma {
+.descripcion__detalles__clasificacion__idioma {
   border: 2px solid #6f6f81;
   border-radius: 5px;
-  padding: 0.3em 0.5em;
+  padding: 0.3em;
   font-size: 0.8em;
-  margin: 0 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
 }
-.descripcion__detalles__idioma--edad {
+.descripcion__detalles__clasificacion__idioma--edad {
   background-color: #6f6f81;
 }
 
@@ -690,12 +686,104 @@ body {
   color: #838389;
   font-family: "graphik-medium";
   max-width: 800px;
-  margin: 1.5em 0;
+  margin: 1em 0 1.5em 0;
 }
 
+.terciario__botones {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+.terciario__botones__btn {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: #373845;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-family: "graphik-medium";
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+.terciario__botones__btn:hover {
+  background-color: #6f6f81;
+}
+.terciario__botones__btn--destacado {
+  background-color: #02ef97;
+  color: #060613;
+}
+.terciario__botones__btn--destacado:hover {
+  background-color: #5effc3;
+}
+.terciario__acciones {
+  width: 100%;
+}
+.terciario__acciones__btn {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-family: "graphik-medium";
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+.terciario__acciones__btn:hover {
+  background-color: #373845;
+}
+
+.boton-trailer {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .terciario__botones {
+    width: auto;
+  }
+  .terciario__botones__btn {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5em;
+  }
+  .terciario__acciones {
+    width: auto;
+  }
+  .terciario__acciones__btn {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5em;
+  }
+}
 @media (min-width: 992px) {
+  .trailer {
+    width: 100%;
+    display: block;
+  }
+  .mobile-background {
+    display: none;
+  }
+  .inf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 60%);
+  }
+  .contenedor {
+    position: absolute;
+    margin: 0 30px;
+    bottom: 0;
+  }
   .principal__poster {
     display: block;
+  }
+  .terciario {
+    justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {

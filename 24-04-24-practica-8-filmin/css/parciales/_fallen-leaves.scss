@@ -5,17 +5,11 @@
 }
 
 .trailer {
-  width: 100%;
+  display: none;
 }
 
-.inf {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.mobile-background {
   width: 100%;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
 }
 
 .contenedor {
@@ -64,17 +58,22 @@
     align-items: center;
 
     &__fecha {
-      margin-right: $margin-sm;
+      margin-right: $margin-md;
+      margin-bottom: $margin-md;
     }
 
-    &__idioma {
-      border: 2px solid $color-gris;
-      border-radius: $border-radius;
-      padding: $padding-xs $padding-sm;
-      font-size: $font-xs;
-      margin: 0 $margin-sm;
-      &--edad {
-        background-color: $color-gris;
+    &__clasificacion {
+      &__idioma {
+        border: 2px solid $color-gris;
+        border-radius: $border-radius;
+        padding: $padding-xs;
+        font-size: $font-xs;
+        margin-right: $margin-sm;
+        margin-bottom: $margin-md;
+
+        &--edad {
+          background-color: $color-gris;
+        }
       }
     }
   }
@@ -84,20 +83,130 @@
   color: $color-gris-claro;
   font-family: $tipo-medium;
   max-width: 800px;
-  margin: $margin-lg 0;
+  margin: $margin-md 0 $margin-lg 0;
+}
+
+.terciario {
+  &__botones {
+    width: 100%;
+    margin-bottom: $margin-sm;
+
+    &__btn {
+      padding: $padding-md;
+      border-radius: $border-radius;
+      background-color: $color-gris-oscurecido;
+      border: none;
+      color: $color-blanco;
+      font-size: $font-sm;
+      font-family: $tipo-medium;
+      display: block;
+      width: 100%;
+      margin-bottom: $margin-sm;
+
+      &:hover {
+        background-color: $color-gris;
+      }
+
+      &--destacado {
+        background-color: $color-verde;
+        color: $color-negro;
+        &:hover {
+          background-color: $color-verde-claro;
+        }
+      }
+    }
+  }
+
+  &__acciones {
+    width: 100%;
+
+    &__btn {
+      padding: $padding-md;
+      border-radius: $border-radius;
+      background-color: transparent;
+      border: none;
+      color: $color-blanco;
+      font-size: $font-sm;
+      font-family: $tipo-medium;
+      display: block;
+      width: 100%;
+      margin-bottom: $margin-sm;
+
+      &:hover {
+        background-color: $color-gris-oscurecido;
+      }
+    }
+  }
+}
+
+.boton-trailer {
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
+  .terciario {
+    &__botones {
+      width: auto;
+      &__btn {
+        display: inline-block;
+        width: auto;
+        margin-right: $margin-sm;
+      }
+    }
+
+    &__acciones {
+      width: auto;
+      &__btn {
+        display: inline-block;
+        width: auto;
+        margin-right: $margin-sm;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
+  .trailer {
+    width: 100%;
+    display: block;
+  }
+
+  .mobile-background {
+    display: none;
+  }
+
+  .inf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 10%,
+      rgba(0, 0, 0, 0) 60%
+    );
+  }
+
+  .contenedor {
+    position: absolute;
+    margin: 0 30px;
+    bottom: 0;
+  }
+
   .principal {
     &__poster {
       display: block;
     }
+  }
+
+  .terciario {
+    justify-content: space-between;
   }
 }
 
