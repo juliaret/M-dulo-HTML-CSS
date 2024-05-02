@@ -92,26 +92,32 @@
     margin-bottom: $margin-sm;
 
     &__btn {
-      padding: $padding-md;
-      border-radius: $border-radius;
-      background-color: $color-gris-oscurecido;
-      border: none;
-      color: $color-blanco;
-      font-size: $font-sm;
-      font-family: $tipo-medium;
-      display: block;
       width: 100%;
-      margin-bottom: $margin-sm;
+      text-align: center;
 
-      &:hover {
-        background-color: $color-gris;
-      }
+      &__enlace {
+        padding: $padding-md;
+        border-radius: $border-radius;
+        background-color: $color-gris-oscurecido;
+        border: none;
+        color: $color-blanco;
+        font-size: $font-sm;
+        font-family: $tipo-medium;
+        display: block;
+        width: 100%;
+        margin-bottom: $margin-sm;
 
-      &--destacado {
-        background-color: $color-verde;
-        color: $color-negro;
         &:hover {
-          background-color: $color-verde-claro;
+          background-color: $color-gris;
+        }
+
+        &--destacado {
+          background-color: $color-verde;
+          color: $color-negro;
+
+          &:hover {
+            background-color: $color-verde-claro;
+          }
         }
       }
     }
@@ -139,9 +145,70 @@
   }
 }
 
-.boton-trailer {
-  width: 100%;
-  text-align: center;
+.detalles {
+  width: 90%;
+  margin: 30px auto;
+
+  &__titulo {
+    color: $color-blanco;
+    margin-bottom: $margin-md;
+  }
+}
+
+.fichas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.tarjeta {
+  background-color: $color-gris-oscuro;
+  border-radius: $border-radius;
+  padding: $padding-xl;
+
+  &__titulo {
+    color: $color-gris-claro;
+    margin-bottom: $margin-md;
+  }
+
+  &__parrafo {
+    color: $color-blanco;
+    line-height: 1.2;
+    margin-bottom: $margin-md;
+  }
+
+  &__subtitulo {
+    color: $color-gris-claro;
+    font-family: $tipo-medium;
+
+    &__link {
+      color: $color-blanco;
+      text-decoration: underline;
+      &:hover {
+        color: $color-verde;
+      }
+    }
+  }
+}
+
+span {
+  color: $color-blanco;
+}
+
+.audio {
+  &__seccion {
+    margin-bottom: $margin-md;
+    margin-right: $margin-md;
+    font-family: $tipo-medium;
+
+    &__subtitulo {
+      color: $color-gris-claro;
+    }
+
+    &__dato {
+      color: $color-blanco;
+    }
+  }
 }
 
 @media (min-width: 576px) {

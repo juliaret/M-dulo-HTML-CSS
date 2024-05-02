@@ -1,0 +1,50 @@
+/*TRÁILER*/
+
+.encabezado {
+  justify-content: space-between;
+  padding: $padding-md $padding-lg;
+
+  &__izq {
+    align-items: center;
+
+    &__flecha {
+      color: $color-blanco;
+      font-size: $font-xl;
+      margin-right: $margin-md;
+
+      &:hover {
+        color: $color-verde;
+      }
+    }
+
+    &__titulo {
+      color: $color-blanco;
+      font-size: $font-md;
+      margin-right: $margin-md;
+    }
+  }
+}
+
+.trailer-pelicula {
+  &__vid {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .encabezado {
+    &__izq {
+      &__titulo {
+        font-size: $font-lg;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
