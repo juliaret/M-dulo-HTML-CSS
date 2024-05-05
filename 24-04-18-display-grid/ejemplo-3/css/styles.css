@@ -20,7 +20,7 @@ a {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 'cabecera' 'primera' 'segunda' 'tercera' 'pie';
+  grid-template-areas: "cabecera" "primera" "segunda" "tercera" "pie";
 }
 
 .header {
@@ -57,7 +57,7 @@ footer {
 @media (min-width: 768px) {
   .pagina {
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: 'cabecera cabecera' 'primera segunda' 'tercera segunda' 'pie pie';
+    grid-template-areas: "cabecera cabecera" "primera segunda" "tercera segunda" "pie pie";
   }
 
   nav a {
@@ -77,7 +77,7 @@ footer {
 @media (min-width: 1200px) {
   .pagina {
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: 'cabecera cabecera' 'primera segunda' 'tercera tercera' 'pie pie';
+    grid-template-areas: "cabecera cabecera" "primera segunda" "tercera tercera" "pie pie";
   }
 
   .header {

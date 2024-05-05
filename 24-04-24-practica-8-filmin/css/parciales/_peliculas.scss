@@ -35,8 +35,7 @@
   top: 70px;
   width: 250px;
   margin-left: $margin-sm;
-  opacity: 0;
-  transition: $transicion-rapida;
+  display: none;
   z-index: 1;
 
   &__oculto {
@@ -57,13 +56,11 @@
 }
 
 .obra:hover .sublista {
-  opacity: 1;
-  transition: $transicion-rapida;
+  display: block;
 }
 
 .genero:hover .sublista {
-  opacity: 1;
-  transition: $transicion-rapida;
+  display: block;
 }
 
 .flecha-menu {

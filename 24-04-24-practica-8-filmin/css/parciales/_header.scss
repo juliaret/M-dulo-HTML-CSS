@@ -6,6 +6,9 @@
   background-color: $color-negro;
   padding: $padding-sm $padding-lg;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   &:hover .menu-hamburguesa__cruz {
     display: block;
@@ -54,7 +57,7 @@
         background-color: $color-verde;
         border: 2px solid $color-verde;
         color: $color-negro;
-        
+
         &:hover {
           background-color: $color-verde-claro;
           color: $color-negro;

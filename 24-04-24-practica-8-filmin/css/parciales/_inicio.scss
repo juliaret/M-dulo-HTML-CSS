@@ -221,8 +221,7 @@ body {
     color: $color-blanco;
     border: 1px solid $color-gris;
     border-radius: $border-radius;
-    opacity: 0;
-    transition: $transicion-rapida;
+    display: none;
     top: -10px;
     left: -10px;
     z-index: 1;
@@ -237,8 +236,7 @@ body {
   }
 
   .audiovisual__contenido__imagen:hover .card {
-    opacity: 1;
-    transition: $transicion-rapida;
+    display: block;
     transform: scale(1.1);
   }
 
