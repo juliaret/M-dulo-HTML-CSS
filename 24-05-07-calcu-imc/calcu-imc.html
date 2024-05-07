@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/calcu-imc.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <h2>
+        Para calcular su índice de masa corporal, ingrese su estatura y peso
+      </h2>
+
+      <div>
+        <label for="">PESO en kilogramos</label>
+        <input type="number" name="" id="peso" placeholder="70" />
+      </div>
+
+      <div>
+        <label for="">ESTATURA en metros</label>
+        <input type="number" name="" id="altura" placeholder="1.70" />
+      </div>
+
+      <div class="boton">
+        <button onclick="calcular()">Calcular</button>
+      </div>
+
+      <p id="respuesta">...</p>
+    </section>
+  </body>
+</html>

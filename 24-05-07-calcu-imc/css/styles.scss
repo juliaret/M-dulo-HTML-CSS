@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 50%;
+  margin: 10% auto;
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 5px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+    input {
+      width: 40%;
+      padding: 5px;
+    }
+    &.boton {
+      justify-content: end;
+      button {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: orange;
+          color: black;
+        }
+      }
+    }
+  }
+  p {
+    height: 16px;
+    text-align: center;
+  }
+}

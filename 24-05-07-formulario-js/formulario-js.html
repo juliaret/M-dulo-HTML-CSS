@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/formulario-js.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form action="" method="get" id="formulario">
+        <div>
+          <label for="">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+        </div>
+
+        <div>
+          <label for="">Apellido</label>
+          <input type="text" name="apellido" id="apellido" />
+        </div>
+
+        <div>
+          <label for="">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="">Asunto</label>
+          <input type="text" name="asunto" id="asunto" />
+        </div>
+
+        <div>
+          <label for="">Servicios</label>
+          <select name="servicios" id="servicios">
+            <option value="">Selecciona una opción</option>
+            <option value="telefonia">Telefonía</option>
+            <option value="energia">Energía</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="">Mensaje</label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+        </div>
+
+        <div>
+          <input type="checkbox" name="politica" id="politica" />
+          <label for="">He leído y acepto la Política de privacidad</label>
+        </div>
+
+        <div class="boton">
+          <input
+            type="button"
+            name=""
+            id=""
+            onclick="enviar()"
+            value="Enviar"
+          />
+        </div>
+      </form>
+
+      <p id="respuesta"></p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 60%;
+  margin: 10% auto;
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 5px;
+  h2 {
+    text-align: center;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    input,
+    select,
+    textarea {
+      width: 60%;
+      padding: 5px;
+      &[type='checkbox'] {
+        width: 10%;
+      }
+    }
+    &.boton {
+      justify-content: end;
+      input {
+        width: 30%;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: orange;
+          color: black;
+        }
+      }
+    }
+  }
+  p {
+    height: 16px;
+    text-align: center;
+  }
+}
+
+.rojo {
+  border: 2px solid red;
+}
