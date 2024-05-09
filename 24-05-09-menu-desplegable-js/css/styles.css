@@ -1,0 +1,408 @@
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: relative;
+}
+
+.cabecera-fija {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 2em;
+  border-bottom: 1px solid white;
+  position: relative;
+  z-index: 1;
+}
+
+/*
+header:hover .cruz {
+  display: block;
+}
+
+header:hover .barras {
+  display: none;
+}
+*/
+
+.cruz {
+  display: none;
+}
+
+.barras {
+  display: block;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  top: -300px;
+  transition: all 0.5s ease;
+}
+
+/*
+header:hover nav {
+  top: 91px;
+  transition: all 0.5s ease;
+}
+*/
+
+nav ul li a {
+  display: block;
+  color: white;
+  background: black;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+  background-color: #434343;
+  transition: all 0.5s ease;
+}
+
+nav ul li ul {
+  background-color: #2e2e2e;
+}
+
+nav ul li ul li {
+  opacity: 0;
+  height: 0;
+}
+
+nav ul li:hover ul li {
+  opacity: 1;
+  height: 40px;
+  transition: all 0.5s ease;
+}
+
+nav ul li ul li a {
+  background-color: #2e2e2e;
+}
+
+.flecha-menu {
+  position: absolute;
+  right: 10px;
+  transition: all 0.5s ease;
+}
+
+nav ul li:hover .flecha-menu {
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-3 {
+  width: 100%;
+  padding: 20px;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.subida,
+.abajo,
+.lateral,
+.centro {
+  position: relative;
+  overflow: hidden;
+}
+
+.subida img,
+.abajo img,
+.lateral img,
+.centro img {
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.subida:hover img {
+  filter: blur(2px);
+  transition: all 0.5s ease;
+}
+
+.abajo:hover img {
+  filter: sepia(70%);
+  transition: all 0.5s ease;
+}
+
+.lateral:hover img {
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.cortina {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.548);
+  color: white;
+}
+
+.cortina p {
+  padding: 10px;
+}
+
+.subida .cortina {
+  height: 100%;
+  top: 100%;
+  transition: all 0.5s ease;
+}
+
+.subida:hover .cortina {
+  top: 50%;
+  transition: all 0.5s ease;
+}
+
+.abajo .cortina {
+  top: -50%;
+  transition: all 0.5s ease;
+}
+
+.abajo:hover .cortina {
+  top: 0;
+  height: 50%;
+  transition: all 0.5s ease;
+}
+
+.lateral .cortina {
+  top: 0;
+  width: 50%;
+  height: 100%;
+  left: -50%;
+  transition: all 0.5s ease;
+}
+
+.lateral:hover .cortina {
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+.centro .cortina {
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.centro:hover .cortina {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.flecha-subida {
+  background-color: black;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 5px;
+  animation: parpadeo 2s ease infinite, rebote 2s ease infinite;
+}
+
+.anima-top {
+  animation: salto 0.5s ease 1;
+  animation-timeline: view();
+}
+
+.anima-top-left {
+  animation: salto2 0.5s ease 1;
+  animation-timeline: view();
+}
+
+/*MEDIA*/
+/*768px*/
+
+@media (min-width: 768px) {
+  .cruz,
+  .barras {
+    display: none;
+  }
+
+  header:hover .cruz,
+  header:hover .barras {
+    display: none;
+  }
+
+  .cabecera-fija {
+    justify-content: center;
+  }
+
+  nav {
+    position: static;
+    background-color: black;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    text-align: center;
+    position: relative;
+    width: 150px;
+  }
+
+  .flecha-menu {
+    position: absolute;
+    right: 0;
+    transition: all 0.5s ease;
+    padding: 0 5px;
+  }
+
+  nav ul li ul {
+    position: absolute;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+}
+
+/*1200px*/
+
+@media (min-width: 1200px) {
+  header {
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    background-color: black;
+    left: -300px;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  header:hover {
+    left: 0px;
+    transition: all 0.5s ease;
+  }
+
+  nav {
+    width: 250px;
+    margin: auto;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-align: left;
+  }
+
+  nav ul li ul {
+    position: static;
+  }
+
+  header:hover .cruz {
+    display: block;
+  }
+
+  header:hover .barras {
+    display: none;
+  }
+
+  .cruz {
+    display: none;
+  }
+
+  .barras {
+    display: block;
+  }
+
+  .cabecera-fija {
+    justify-content: space-between;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+}
+
+/*ANIMACIONES*/
+@keyframes parpadeo {
+  0% {
+    background-color: black;
+  }
+
+  50% {
+    background-color: brown;
+  }
+
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes rebote {
+  0% {
+    bottom: 10px;
+  }
+
+  50% {
+    bottom: 12px;
+  }
+
+  100% {
+    bottom: 10px;
+  }
+}
+
+@keyframes salto {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 100px;
+  }
+}
+
+@keyframes salto2 {
+  from {
+    left: -200px;
+  }
+
+  to {
+    left: 0px;
+  }
+}

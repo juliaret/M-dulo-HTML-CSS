@@ -18,6 +18,7 @@ function retroceder() {
 
   console.log(numFoto);
   fotos[numFoto].classList.add('activo');
+  puntos[numFoto].classList.replace('bi-circle', 'bi-circle-fill');
 }
 
 function avanzar() {

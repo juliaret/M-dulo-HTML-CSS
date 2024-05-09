@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de sueldo neto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/calculadora.js" defer></script>
+  </head>
+  <body>
+    <section class="titulo">
+      <h2>Calculadora de sueldo neto mensual</h2>
+    </section>
+
+    <section class="contenedor">
+      <h3>Completa los siguientes campos</h3>
+      <div>
+        <div class="alinear">
+          <label for="">Sueldo bruto anual</label>
+          <input type="number" name="" id="bruto" placeholder="30000" />
+        </div>
+
+        <div class="alinear">
+          <label for="">Nº de hijos</label>
+          <select name="" id="hijos">
+            <option value="">Elige una opción</option>
+            <option value="hijos0">0 hijos</option>
+            <option value="hijos1">1 o 2 hijos</option>
+            <option value="hijos3">3 o más hijos</option>
+          </select>
+        </div>
+
+        <div class="alinear">
+          <label for="">Tipo de contrato</label>
+          <select name="" id="contrato">
+            <option value="">Elige una opción</option>
+            <option value="indefinido">Indefinido</option>
+            <option value="temporal">Temporal</option>
+          </select>
+        </div>
+
+        <div class="alinear">
+          <label for="">Nº de pagas</label>
+          <select name="" id="pagas">
+            <option value="">Elige una opción</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+          </select>
+        </div>
+
+        <div id="boton">
+          <button>Calcular</button>
+        </div>
+
+        <p id="respuesta"></p>
+      </div>
+    </section>
+
+    <section class="contenedor">
+      <h3>Su cálculo de sueldo neto mensual en x pagas es:</h3>
+      <div>
+        <div class="alinear">
+          <p>Retención por hijos</p>
+          <span id="retHijos"></span>
+        </div>
+
+        <div class="alinear">
+          <p>Retención por tipo de contrato:</p>
+          <span id="retContrato"></span>
+        </div>
+
+        <div class="alinear">
+          <p>Sueldo neto mensual</p>
+          <span id="neto"></span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

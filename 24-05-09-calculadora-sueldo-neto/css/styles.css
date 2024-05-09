@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 40%;
+  margin: 50px auto;
+  border: 3px solid green;
+  border-radius: 5px;
+  padding: 30px 40px;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.alinear {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+input,
+select {
+  width: 40%;
+}
+
+#boton {
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  background-color: palegreen;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+}
+
+#respuesta {
+  margin-top: 20px;
+}
