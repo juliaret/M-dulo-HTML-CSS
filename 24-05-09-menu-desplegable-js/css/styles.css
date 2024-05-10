@@ -45,12 +45,16 @@ header:hover .barras {
 }
 */
 
-.cruz {
+.ocultar {
   display: none;
 }
 
+.cruz {
+  cursor: pointer;
+}
+
 .barras {
-  display: block;
+  cursor: pointer;
 }
 
 nav {
@@ -66,6 +70,29 @@ header:hover nav {
   transition: all 0.5s ease;
 }
 */
+
+.salir {
+  top: 91px;
+  transition: all 0.5s ease;
+}
+
+.header-lateral {
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+.header-fijo {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  img {
+    display: none;
+  }
+  nav {
+    background-color: #2e2e2e;
+    padding: 10px;
+  }
+}
 
 nav ul li a {
   display: block;
@@ -250,13 +277,8 @@ nav ul li:hover .flecha-menu {
 /*768px*/
 
 @media (min-width: 768px) {
-  .cruz,
-  .barras {
-    display: none;
-  }
-
-  header:hover .cruz,
-  header:hover .barras {
+  .cruz.ocultar,
+  .barras.ocultar {
     display: none;
   }
 
@@ -309,11 +331,6 @@ nav ul li:hover .flecha-menu {
     z-index: 1;
   }
 
-  header:hover {
-    left: 0px;
-    transition: all 0.5s ease;
-  }
-
   nav {
     width: 250px;
     margin: auto;
@@ -333,20 +350,8 @@ nav ul li:hover .flecha-menu {
     position: static;
   }
 
-  header:hover .cruz {
-    display: block;
-  }
-
-  header:hover .barras {
+  .cruz.ocultar {
     display: none;
-  }
-
-  .cruz {
-    display: none;
-  }
-
-  .barras {
-    display: block;
   }
 
   .cabecera-fija {
