@@ -1,0 +1,41 @@
+/*ESTILOS GENERALES*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $color-blanco;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: rgb(242, 149, 115);
+  background: linear-gradient(
+    135deg,
+    rgba(201, 184, 230, 1) 0%,
+    rgba(234, 108, 113, 1) 33%,
+    rgba(242, 149, 115, 1) 65%,
+    rgba(201, 184, 230, 1) 100%
+  );
+  font-family: $tipografia-cuerpo;
+  color: $color-blanco;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $tipografia-titulares;
+}

@@ -1,6 +1,6 @@
 *,
 *::after,
-*::after {
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -97,7 +97,7 @@ header:hover nav {
 nav ul li a {
   display: block;
   color: white;
-  background: black;
+  background-color: black;
   padding: 10px;
   text-transform: uppercase;
   transition: all 0.5s ease;
@@ -115,6 +115,7 @@ nav ul li ul {
 nav ul li ul li {
   opacity: 0;
   height: 0;
+  transition: all 0.5s ease;
 }
 
 nav ul li:hover ul li {
@@ -133,7 +134,7 @@ nav ul li ul li a {
   transition: all 0.5s ease;
 }
 
-nav ul li:hover .flecha-menu {
+nav ul li:hover a .flecha-menu {
   transform: rotate(90deg);
   transition: all 0.5s ease;
 }
