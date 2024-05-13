@@ -1,0 +1,47 @@
+.header {
+  text-align: center;
+  padding: 10px 0;
+  &__logo {
+    img {
+      width: 150px;
+    }
+  }
+  .nav {
+    background-color: $color_negro;
+    &__link {
+      display: inline-block;
+      color: $color_blanco;
+      padding: 5px;
+      border-bottom: 2px solid $color_negro; /*Esto se pone para que cuando hagamos hover y aparezca el subrayado no haya un salto raro*/
+      &:hover {
+        border-bottom: 2px solid $color_blanco;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: $color_negro;
+    gap: 20px;
+    &__logo {
+      background-color: $color_blanco;
+      display: inline-block;
+      padding: 5px;
+    }
+    .nav__list {
+      display: inline-block;
+    }
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
