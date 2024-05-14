@@ -25,6 +25,7 @@ body {
   background: rgb(242, 149, 115);
   background: linear-gradient(135deg, rgb(201, 184, 230) 0%, rgb(234, 108, 113) 33%, rgb(242, 149, 115) 65%, rgb(201, 184, 230) 100%);
   font-family: "Inter", sans-serif;
+  font-weight: 500;
   color: white;
 }
 
@@ -32,4 +33,84 @@ h1,
 h2,
 h3 {
   font-family: "Raleway", sans-serif;
+}
+
+.header {
+  padding: 1.5em;
+}
+
+.nav__navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.nav__enlace {
+  display: inline-block;
+  padding: 0.6em;
+  border: 2px solid white;
+  border-radius: 35px;
+  width: 100px;
+  text-align: center;
+}
+.nav__enlace--activo {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.nav__menu {
+  position: absolute;
+  background-color: #c9b8e6;
+  top: 60px;
+  right: 0;
+  padding: 1em;
+  border-radius: 35px 0 35px 35px;
+}
+.nav__link {
+  display: inline-block;
+  padding: 0.6em;
+  border: 2px solid white;
+  border-radius: 35px;
+  width: 220px;
+  text-align: center;
+  margin: 0.4em;
+}
+.nav__link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.nav__sublink {
+  display: inline-block;
+  padding: 0.6em;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #c9b8e6;
+  border-radius: 35px;
+  width: 220px;
+  text-align: center;
+  margin: 0.4em;
+}
+.nav__sublink:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.hamburger {
+  font-size: 2.5em;
+}
+
+@media (min-width: 768px) {
+  .mb-menu {
+    display: none;
+  }
+  .nav__menu {
+    position: static;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav__link {
+    width: 200px;
+  }
+  .nav__sublink {
+    width: 200px;
+    color: #f29573;
+  }
 }/*# sourceMappingURL=styles.css.map */

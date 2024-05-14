@@ -25,12 +25,13 @@ body {
   background: rgb(242, 149, 115);
   background: linear-gradient(
     135deg,
-    rgba(201, 184, 230, 1) 0%,
+    rgb(201, 184, 230) 0%,
     rgba(234, 108, 113, 1) 33%,
     rgba(242, 149, 115, 1) 65%,
     rgba(201, 184, 230, 1) 100%
   );
   font-family: $tipografia-cuerpo;
+  font-weight: 500;
   color: $color-blanco;
 }
 
