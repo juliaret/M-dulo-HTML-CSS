@@ -29,6 +29,22 @@
   }
 }
 
+.ver-categorias {
+  text-align: center;
+  &__btn {
+    display: inline-block;
+    background-color: $color_negro;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: $color_blanco;
+    border: 2px solid $color_negro;
+    &:hover {
+      background-color: $color_gris;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
 @media (min-width: 576px) {
   .productos {
     &__bloque {

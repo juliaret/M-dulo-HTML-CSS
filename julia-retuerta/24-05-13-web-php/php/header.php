@@ -14,7 +14,22 @@ include "variables.php";
     />
     <link rel="stylesheet" href="css/galeria.css">
     <link rel="stylesheet" href="css/styles.css">
+    <?php
+    if($pagina=="INICIO"){
+        ?>
+        <script src="js/galeria.js" defer></script>
+        <?php
+    }
+    if($pagina=="CONTACTO"){
+        ?>
+    <script src="js/formulario-js.js" defer></script>
+    <?php
+    }
+
+    ?>
+    
     <script src="js/galeria.js" defer></script>
+    <script src="js/formulario-js.js" defer></script>
 </head>
 <body>
     <!--HEADER-->
@@ -22,7 +37,7 @@ include "variables.php";
         <a class="header__logo" href="./inicio.php"><img src="./images/logo.webp" alt=""></a>
         <nav class="nav">
             <ul class="nav__navbar">
-                <li class="nav__list"><a class="nav__link" href="./inicio.php">Inicio</a></li>
+                <li class="nav__list"><a class="nav__link nav__link--activo" href="./inicio.php">Inicio</a></li>
                 <li class="nav__list"><a class="nav__link" href="./nosotros.php">Nosotros</a></li>
                 <li class="nav__list"><a class="nav__link" href="./tienda.php">Tienda</a></li>
                 <li class="nav__list"><a class="nav__link" href="./contacto.php">Contacto</a></li>

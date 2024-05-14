@@ -23,6 +23,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.pagina__titulo {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.img-100 {
+  width: 100%;
+}
+
 .header {
   text-align: center;
   padding: 10px 0;
@@ -40,6 +49,9 @@ body {
   border-bottom: 2px solid black; /*Esto se pone para que cuando hagamos hover y aparezca el subrayado no haya un salto raro*/
 }
 .header .nav__link:hover {
+  border-bottom: 2px solid white;
+}
+.header .nav__link--activo {
   border-bottom: 2px solid white;
 }
 
@@ -137,6 +149,22 @@ body {
   transition: all 0.5s ease;
 }
 
+.ver-categorias {
+  text-align: center;
+}
+.ver-categorias__btn {
+  display: inline-block;
+  background-color: black;
+  padding: 5px 10px;
+  margin: 10px 0;
+  color: white;
+  border: 2px solid black;
+}
+.ver-categorias__btn:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+
 @media (min-width: 576px) {
   .productos__bloque {
     grid-template-columns: 1fr 1fr;
@@ -149,7 +177,127 @@ body {
     gap: 20px;
   }
 }
+.nosotros {
+  padding: 2em;
+  margin: 50px 0;
+}
+.nosotros--home {
+  background-color: black;
+}
+.nosotros--home .nosotros__contenido {
+  color: white;
+}
+.nosotros__bloque {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+}
+.nosotros__contenido * {
+  margin: 30px 0;
+}
+.nosotros__btn a {
+  display: inline-block;
+  text-align: center;
+  background-color: black;
+  padding: 5px 10px;
+  margin: 10px 0;
+  color: white;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+  width: 50%;
+}
+.nosotros__btn a:hover {
+  color: black;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 992px) {
+  .nosotros__bloque {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.contacto {
+  padding: 2em;
+  margin: 50px 0;
+  /*&__btn {
+    a {
+      display: inline-block;
+      text-align: center;
+      background-color: $color_negro;
+      padding: 5px 10px;
+      margin: 10px 0;
+      color: $color_blanco;
+      border: 2px solid $color_blanco;
+      transition: all 0.5s ease;
+      width: 50%;
+      &:hover {
+        color: $color_negro;
+        background-color: $color_blanco;
+        transition: all 0.5s ease;
+      }
+    }
+  }*/
+}
+.contacto__bloque {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+}
+.contacto form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+}
+.contacto form div input,
+.contacto form div select,
+.contacto form div textarea {
+  width: 60%;
+  padding: 5px;
+}
+.contacto form div input[type=checkbox],
+.contacto form div select[type=checkbox],
+.contacto form div textarea[type=checkbox] {
+  width: 10%;
+}
+.contacto form div p {
+  width: 100%;
+  height: 16px;
+  text-align: right;
+  color: red;
+}
+.contacto form div.boton {
+  justify-content: end;
+}
+.contacto form div.boton input {
+  display: inline-block;
+  cursor: pointer;
+  background-color: black;
+  padding: 5px 10px;
+  margin: 10px 0;
+  color: white;
+  border: 2px solid black;
+}
+.contacto form div.boton input:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 992px) {
+  .contacto__bloque {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+  }
+}
 footer {
   text-align: center;
   border-top: 2px solid black;
+  padding: 10px;
 }/*# sourceMappingURL=styles.css.map */

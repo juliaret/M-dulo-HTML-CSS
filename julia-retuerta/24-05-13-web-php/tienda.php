@@ -10,61 +10,39 @@ if (isset($_GET["cat"])){
 ?>
 
 <!--CUERPO TIENDA-->
-<h1>TIENDA - Categoría: <?php echo $categoria; ?></h1>
-<section class="productos">
-    <h2 class="productos__titulo">MUJER</h2>
-    <div class="productos__bloque">
-        <!--PRODUCTO 1-->
-        <div class="productos__card">
-            <a href="./producto.php"><img src="./images/mujer1.jpeg" alt=""></a>
-            <div class="productos__detalle">
-                <h3 class="productos__nombre">Pantalón fluido con lino</h3>
-                <p class="productos__precio">19,99 €</p>
-                <a class="productos__btn" href="./producto.php">
-                    Comprar
-                </a>
-            </div>
-        </div>
-
-        <!--PRODUCTO 2-->
-        <div class="productos__card">
-            <a href="./producto.php"><img src="./images/mujer2.jpeg" alt=""></a>
-            <div class="productos__detalle">
-                <h3 class="productos__nombre">Pantalón calados tipo crochet</h3>
-                <p class="productos__precio">25,99 €</p>
-                <a class="productos__btn" href="./producto.php">
-                    Comprar
-                </a>
-            </div>
-        </div>
-
-        <!--PRODUCTO 3-->
-        <div class="productos__card">
-            <a href="./producto.php"><img src="./images/mujer3.jpeg" alt=""></a>
-            <div class="productos__detalle">
-                <h3 class="productos__nombre">Pantalón rústico con lino</h3>
-                <p class="productos__precio">25,99 €</p>
-                <a class="productos__btn" href="./producto.php">
-                    Comprar
-                </a>
-            </div>
-        </div>
-
-        <!--PRODUCTO 4-->
-        <div class="productos__card">
-            <a href="./producto.php"><img src="./images/mujer4.jpeg" alt=""></a>
-            <div class="productos__detalle">
-                <h3 class="productos__nombre">Jeans rectos costuras marcadas
-</h3>
-                <p class="productos__precio">35,99 €</p>
-                <a class="productos__btn" href="./producto.php">
-                    Comprar
-                </a>
-            </div>
-        </div>
-
-    </div>
+<section class="pagina__titulo">
+<h1>TIENDA - Categoría: <?php echo strtoupper ($categoria); ?></h1>
 </section>
+
+
+<?php
+
+if (isset($_GET["cat"])){
+    if($categoria=="mujer"){
+        include "php/cat_mujer.php";
+    } else if ($categoria=="hombre"){
+        include "php/cat_hombre.php";
+    } else{
+        include "php/cat_infantil.php";
+    }
+    ?>
+
+    <section class="ver-categorias">
+        <a class="ver-categorias__btn" href="tienda.php">VER TODAS LAS CATEGORÍAS</a>
+    </section>
+
+    <?php
+} else{
+    include "php/cat_mujer.php";
+    include "php/cat_hombre.php";
+    include "php/cat_infantil.php";
+
+}
+
+include "php/filtro_tienda.php";
+
+?>
+
 <?php
 include "php/footer.php";
 ?>

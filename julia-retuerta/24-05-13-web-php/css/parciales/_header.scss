@@ -16,6 +16,9 @@
       &:hover {
         border-bottom: 2px solid $color_blanco;
       }
+      &--activo {
+        border-bottom: 2px solid $color_blanco;
+      }
     }
   }
 }

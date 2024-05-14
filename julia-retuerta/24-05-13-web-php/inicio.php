@@ -5,25 +5,26 @@ include "php/galeria.php";
 ?>
 
 <!--CUERPO INICIO-->
+<?php
+include "php/filtro_tienda.php";
+?>
 
-<section class="categorias">
-    <h2 class="categorias__titulo">COMPRAR POR CATEGORÍA</h2>
-    <div class="categorias__bloque">
-        <div class="categorias__card">
-            <a class="categorias__foto" href="./tienda.php?cat=mujer"><img src="./images/cat-mujer.webp" alt=""></a>
-            <a class="categorias__btn" href="./tienda.php?cat=mujer"><h3>COMPRAR PARA MUJER</h3></a>
-        </div>
-        <div class="categorias__card">
-            <a class="categorias__foto" href="./tienda.php?cat=hombre"><img src="./images/cat-hombre.webp" alt=""></a>
-            <a class="categorias__btn" href="./tienda.php?cat=hombre"><h3>COMPRAR PARA HOMBRE</h3></a>
-        </div>
-        <div class="categorias__card">
-            <a class="categorias__foto" href="./tienda.php?cat=infantil"><img src="./images/cat-mujer.webp" alt=""></a>
-            <a class="categorias__btn" href="./tienda.php?cat=infantil"><h3>COMPRAR PARA NIÑO</h3></a>
+<section class="nosotros nosotros--home">
+    <div class="nosotros__bloque">
+    <div class="nosotros__foto">
+        <img src="./images/corporativa.jpeg" alt="">
+    </div>
+    <div class="nosotros__contenido">
+        <h2 class="nosotros__titular">About us</h2>
+        <h3 class="nosotros__subtitular">We are a global family of brands and businesses. We make it possible for customers around the world to express themselves through fashion and design in a sustainable way.</h3>
+        <div class="nosotros__btn">
+            <a href="nosotros.php">VER MÁS</a>
         </div>
     </div>
+    </div>
+
 </section>
+
 <?php
 include "php/footer.php";
-
 ?>
