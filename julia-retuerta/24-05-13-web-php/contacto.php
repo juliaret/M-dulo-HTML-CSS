@@ -96,6 +96,10 @@ include "php/header.php";
 </section>
 
 <?php
+include "php/filtro_tienda.php";
+?>
+
+<?php
 include "php/footer.php";
 
 ?>

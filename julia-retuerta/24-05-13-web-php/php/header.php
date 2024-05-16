@@ -14,6 +14,7 @@ include "variables.php";
     />
     <link rel="stylesheet" href="css/galeria.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/navegacion.js" defer></script>
     <?php
     if($pagina=="INICIO"){
         ?>
@@ -33,11 +34,15 @@ include "variables.php";
 </head>
 <body>
     <!--HEADER-->
-    <header class="header">
-        <a class="header__logo" href="./inicio.php"><img src="./images/logo.webp" alt=""></a>
+    <header class="header" id="<?php echo $pagina; ?>">
+    <div class="header__fijo">
+    <a class="header__logo" href="./inicio.php"><img src="./images/logo.webp" alt=""></a>
+    <span id="hamburguesa"><i class="bi bi-list"></i></span>
+    </div>
+        
         <nav class="nav">
             <ul class="nav__navbar">
-                <li class="nav__list"><a class="nav__link nav__link--activo" href="./inicio.php">Inicio</a></li>
+                <li class="nav__list"><a class="nav__link" href="./inicio.php">Inicio</a></li>
                 <li class="nav__list"><a class="nav__link" href="./nosotros.php">Nosotros</a></li>
                 <li class="nav__list"><a class="nav__link" href="./tienda.php">Tienda</a></li>
                 <li class="nav__list"><a class="nav__link" href="./contacto.php">Contacto</a></li>
