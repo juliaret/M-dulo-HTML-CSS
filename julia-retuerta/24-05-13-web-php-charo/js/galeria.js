@@ -2,13 +2,9 @@ let fotos = document.querySelectorAll(".fotos img");
 console.log(fotos.length);
 
 let puntos = document.querySelectorAll(".puntos div i");
-//console.log(fotos.length);
-
 document.querySelector("#atras").addEventListener("click", retroceder);
 document.querySelector("#adelante").addEventListener("click", avanzar);
-
 let numFoto = 0;
-
 function retroceder() {
   numFoto--;
   if (numFoto < 0) {
