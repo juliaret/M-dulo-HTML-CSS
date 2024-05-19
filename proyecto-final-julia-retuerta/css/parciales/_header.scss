@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     align-items: center;
     position: relative;
+
     &:hover .nav__menu {
       right: 0;
       opacity: 1;
@@ -19,13 +20,18 @@
   &__enlace {
     display: inline-block;
     padding: $padding-sm-md;
+    margin: $margin-sm-xs;
     border: 2px solid $color-blanco;
     border-radius: $border-radius-large;
     width: 100px;
     text-align: center;
 
-    &--activo {
+    &:hover {
       background-color: $color-semitransparente20;
+    }
+
+    &--activo {
+      background-color: $color-lila;
     }
   }
 
@@ -34,11 +40,15 @@
     background-color: $color-lila;
     top: 60px;
     right: -290px;
-    opacity: 0;
+    /*opacity: 0;*/
     transition: $transicion-simple;
     padding: $padding-md;
     border-radius: $border-radius-large 0 $border-radius-large
       $border-radius-large;
+
+    &--ocultar {
+      display: none;
+    }
   }
 
   &__link {
@@ -70,34 +80,48 @@
       color: $color-blanco;
     }
   }
+
+  &__subnavbar {
+    display: none;
+  }
 }
 
-.hamburger {
+.barras {
   font-size: $font-xxl;
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {
-  .mb-menu {
+  #hamburguesa {
     display: none;
   }
 
   .nav {
+    &__navbar {
+      align-items: flex-start;
+    }
+
     &__menu {
       position: static;
       background-color: transparent;
       display: flex;
       flex-wrap: wrap;
+      padding: 0;
     }
 
     &__link {
-      width: 200px;
+      width: 180px;
     }
 
     &__sublink {
-      width: 200px;
+      width: 180px;
       color: $color-naranja;
+      font-weight: 500;
+      &:hover {
+        font-weight: 400;
+      }
     }
   }
 }

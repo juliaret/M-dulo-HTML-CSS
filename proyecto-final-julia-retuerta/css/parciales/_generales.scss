@@ -30,6 +30,7 @@ body {
     rgba(242, 149, 115, 1) 65%,
     rgba(201, 184, 230, 1) 100%
   );
+  height: 100%;
   font-family: $tipografia-cuerpo;
   font-weight: 500;
   color: $color-blanco;
@@ -39,4 +40,18 @@ h1,
 h2,
 h3 {
   font-family: $tipografia-titulares;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  body {
+    font-weight: 400;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
 }
