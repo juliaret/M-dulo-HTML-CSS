@@ -1,0 +1,42 @@
+#galeria img {
+  width: 100%;
+}
+#galeria {
+  /*
+  width: 80%;
+  margin: 50px auto;*/
+  position: relative;
+}
+#galeria .fotos {
+  img {
+    display: none;
+    &.activo {
+      display: block;
+    }
+  }
+}
+#galeria .flechas {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+#galeria .flecha {
+  color: white;
+  font-size: 2em;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.5s ease;
+  }
+}
+#galeria .puntos {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}

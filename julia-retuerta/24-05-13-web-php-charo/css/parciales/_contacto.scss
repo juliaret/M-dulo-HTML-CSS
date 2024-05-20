@@ -1,0 +1,97 @@
+.contacto {
+  padding: 2em;
+  margin: 50px 0;
+  &__bloque {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+  }
+  &__contenido {
+    * {
+      // margin: 5px 0;
+    }
+  }
+  /*&__btn {
+    a {
+      display: inline-block;
+      text-align: center;
+      background-color: $color_negro;
+      padding: 5px 10px;
+      margin: 10px 0;
+      color: $color_blanco;
+      border: 1px solid $color_blanco;
+      transition: all 0.5s ease;
+      width: 50%;
+      &:hover {
+        color: $color_negro;
+        background-color: $color_blanco;
+        transition: all 0.5s ease;
+      }
+    }
+  }*/
+  form {
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 90%;
+      margin: 20px auto;
+      input,
+      select,
+      textarea {
+        width: 60%;
+        padding: 5px;
+        &[type='checkbox'] {
+          width: 10%;
+        }
+      }
+      p {
+        width: 100%;
+        height: 16px;
+        text-align: right;
+        color: brown;
+      }
+
+      &.boton {
+        justify-content: end;
+        input {
+          display: inline-block;
+          cursor: pointer;
+          background-color: $color_negro;
+          padding: 5px 10px;
+          margin: 10px 0;
+          color: $color_blanco;
+          border: 1px solid $color_negro;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: $color_negro_trans;
+            transition: all 0.5s ease;
+          }
+        }
+      }
+    }
+    p {
+      height: 16px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .contacto {
+    &__bloque {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}

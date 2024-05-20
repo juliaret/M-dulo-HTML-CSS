@@ -15,10 +15,10 @@ if (header_id == "INICIO") {
 if (window.innerWidth < 768) {
   document.querySelector(".nav").classList.add("nav--ocultar");
   document.querySelector("#hamburguesa").addEventListener("click", function () {
-    //console.log('menu...');
-
+    //console.log('menú...');
     document.querySelector(".nav").classList.toggle("nav--ocultar");
     //bi-x
+
     if (document.querySelector(".nav").classList.contains("nav--ocultar")) {
       document
         .querySelector("#hamburguesa i")

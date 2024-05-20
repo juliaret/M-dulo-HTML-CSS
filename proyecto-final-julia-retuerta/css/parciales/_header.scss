@@ -1,0 +1,133 @@
+.header {
+  padding: $padding-lg;
+}
+
+.nav {
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+
+    &:hover .nav__menu {
+      right: 0;
+      opacity: 1;
+      transition: $transicion-simple;
+    }
+  }
+
+  &__enlace {
+    display: inline-block;
+    padding: $padding-sm-md;
+    margin: $margin-sm-xs;
+    border: 2px solid $color-blanco;
+    border-radius: $border-radius-large;
+    width: 100px;
+    text-align: center;
+
+    &:hover {
+      background-color: $color-semitransparente20;
+    }
+
+    &--activo {
+      background-color: $color-lila;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    background-color: $color-lila;
+    top: 60px;
+    right: -290px;
+    /*opacity: 0;*/
+    transition: $transicion-simple;
+    padding: $padding-md;
+    border-radius: $border-radius-large 0 $border-radius-large
+      $border-radius-large;
+
+    &--ocultar {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: $padding-sm-md;
+    border: 2px solid $color-blanco;
+    border-radius: $border-radius-large;
+    width: 220px;
+    text-align: center;
+    margin: $margin-sm-xs;
+
+    &:hover {
+      background-color: $color-semitransparente20;
+    }
+  }
+
+  &__sublink {
+    display: inline-block;
+    padding: $padding-sm-md;
+    background-color: $color-semitransparente90;
+    color: $color-lila;
+    border-radius: $border-radius-large;
+    width: 220px;
+    text-align: center;
+    margin: $margin-sm-xs;
+
+    &:hover {
+      background-color: $color-semitransparente30;
+      color: $color-blanco;
+    }
+  }
+
+  &__subnavbar {
+    display: none;
+  }
+}
+
+.barras {
+  font-size: $font-xxl;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  #hamburguesa {
+    display: none;
+  }
+
+  .nav {
+    &__navbar {
+      align-items: flex-start;
+    }
+
+    &__menu {
+      position: static;
+      background-color: transparent;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    &__link {
+      width: 180px;
+    }
+
+    &__sublink {
+      width: 180px;
+      color: $color-naranja;
+      font-weight: 500;
+      &:hover {
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}

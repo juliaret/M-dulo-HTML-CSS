@@ -1,0 +1,41 @@
+.rrss {
+  text-align: center;
+
+  &__link {
+    padding: 0 $padding-sm;
+  }
+
+  &__icon {
+    width: 36px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.footer {
+  padding: $padding-lg;
+  margin-top: $margin-xl;
+
+  &__datos {
+    padding: $padding-md;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}

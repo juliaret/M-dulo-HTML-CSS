@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: $tipo_cuerpo;
+}
+.pagina__titulo {
+  width: 90%;
+  margin: 30px auto;
+}
+.img-100 {
+  width: 100%;
+}
