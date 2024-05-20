@@ -15,27 +15,42 @@
 }
 
 .footer {
-  padding: $padding-lg;
+  padding: $padding-sm $padding-md;
   margin-top: $margin-xl;
 
   &__datos {
-    padding: $padding-md;
+    padding: $padding-sm $padding-md;
     display: inline-block;
   }
 }
 
 @media (min-width: 576px) {
 }
+
 @media (min-width: 768px) {
   .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .rrss {
+    position: fixed;
+    right: 0;
+    top: 200px;
+
+    &__link {
+      display: block;
+      padding: $padding-xs $padding-xl;
+    }
+  }
 }
+
 @media (min-width: 992px) {
 }
+
 @media (min-width: 1200px) {
 }
+
 @media (min-width: 1400px) {
 }

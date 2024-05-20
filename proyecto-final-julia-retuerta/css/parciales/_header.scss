@@ -38,10 +38,11 @@
   &__menu {
     position: absolute;
     background-color: $color-lila;
-    top: 60px;
-    right: -290px;
-    /*opacity: 0;*/
-    transition: $transicion-simple;
+    top: 70px;
+    right: 0;
+    //right: -290px;
+    //opacity: 0;
+    //transition: $transicion-simple;
     padding: $padding-md;
     border-radius: $border-radius-large 0 $border-radius-large
       $border-radius-large;
@@ -59,6 +60,7 @@
     width: 220px;
     text-align: center;
     margin: $margin-sm-xs;
+    position: relative;
 
     &:hover {
       background-color: $color-semitransparente20;
@@ -82,7 +84,9 @@
   }
 
   &__subnavbar {
-    display: none;
+    &--ocultar {
+      display: none;
+    }
   }
 }
 
@@ -91,13 +95,15 @@
   cursor: pointer;
 }
 
+.flecha-menu {
+  position: absolute;
+  right: 32px;
+}
+
 @media (min-width: 576px) {
 }
-@media (min-width: 768px) {
-  #hamburguesa {
-    display: none;
-  }
 
+@media (min-width: 768px) {
   .nav {
     &__navbar {
       align-items: flex-start;
@@ -115,19 +121,36 @@
       width: 180px;
     }
 
+    &__subnavbar {
+      position: absolute;
+    }
+
     &__sublink {
       width: 180px;
-      color: $color-naranja;
+
       font-weight: 500;
       &:hover {
         font-weight: 400;
       }
     }
   }
+
+  #hamburguesa {
+    display: none;
+  }
+
+  .flecha-menu {
+    position: absolute;
+    right: 15px;
+    top: 9px;
+  }
 }
+
 @media (min-width: 992px) {
 }
+
 @media (min-width: 1200px) {
 }
+
 @media (min-width: 1400px) {
 }
