@@ -45,6 +45,7 @@
     //transition: $transicion-simple;
     padding: $padding-md;
     border-radius: $border-radius-large 0 $border-radius-large $border-radius-large;
+    z-index: 1;
 
     &--ocultar {
       display: none;

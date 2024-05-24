@@ -1,0 +1,64 @@
+.contacto {
+  width: 80%;
+  margin: 80px auto 60px;
+
+  &__titulo {
+    font-family: $tipografia-titulares;
+    font-size: $font-super-xxxl;
+    font-weight: 500;
+    margin-bottom: $margin-sm;
+  }
+
+  &__parrafo {
+    font-weight: 400;
+    margin-bottom: $margin-md;
+  }
+}
+
+input,
+textarea {
+  display: block;
+  border: none;
+  border-radius: $border-radius-large;
+  min-width: 250px;
+  padding: 10px;
+  color: $color-morado;
+  font-family: $tipografia-cuerpo;
+
+  &::placeholder {
+    color: $color-lila;
+    font-family: $tipografia-cuerpo;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $color-lila;
+  }
+}
+
+textarea {
+  min-height: 300px;
+  border-radius: $border-radius-medium;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    margin: 120px auto 0;
+  }
+
+  textarea {
+    min-width: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

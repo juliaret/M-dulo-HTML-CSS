@@ -51,33 +51,43 @@
 .contenido-33-33-33 {
   display: grid;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contenido-50-50 {
   display: grid;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contenido-60-40 {
   display: grid;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contenido-30-70 {
   display: grid;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.contenido-70-30 {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contenido-100 {
+  margin-bottom: 20px;
 }
 
 .contenido-70-izq {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contenido-70-dcha {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .parrafo-dcha {
@@ -128,6 +138,10 @@
 
   .contenido-30-70 {
     grid-template-columns: 2fr 3fr;
+  }
+
+  .contenido-70-30 {
+    grid-template-columns: 3fr 2fr;
   }
 }
 

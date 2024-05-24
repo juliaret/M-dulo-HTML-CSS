@@ -1,4 +1,4 @@
-.graphic-design {
+.proyectos {
   width: 90%;
   margin: 50px auto;
 
@@ -28,12 +28,12 @@
     overflow: hidden;
     border-radius: $border-radius-medium;
 
-    &:hover .graphic-design__inf-proyecto {
+    &:hover .proyectos__inf-proyecto {
       opacity: 1;
       transition: $transicion-simple;
     }
 
-    &:hover .graphic-design__img {
+    &:hover .proyectos__img {
       filter: blur(3px);
       transform: scale(1.2);
       transition: $transicion-simple;
@@ -89,7 +89,7 @@
 }
 
 @media (min-width: 768px) {
-  .graphic-design {
+  .proyectos {
     width: 80%;
   }
 }
