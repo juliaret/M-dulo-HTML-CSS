@@ -412,11 +412,26 @@ h3 {
   margin: 1em 0;
   display: inline-block;
 }
+.flechas-proyectos__link:hover {
+  color: #765d9d;
+}
+.flechas-proyectos__link:hover .flechas-proyectos__img {
+  display: none;
+}
+.flechas-proyectos__link:hover .flechas-proyectos__img--hover {
+  display: block;
+}
 .flechas-proyectos__texto {
   font-weight: 500;
 }
 .flechas-proyectos__texto--izq {
   text-align: right;
+}
+.flechas-proyectos__img {
+  display: block;
+}
+.flechas-proyectos__img--hover {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -539,7 +554,9 @@ textarea {
 input[type=checkbox],
 textarea[type=checkbox] {
   display: inline-block;
+  min-width: none;
   min-width: 20px;
+  height: 20px;
   accent-color: #765d9d;
 }
 input::-moz-placeholder, textarea::-moz-placeholder {

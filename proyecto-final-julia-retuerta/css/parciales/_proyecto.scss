@@ -117,12 +117,33 @@
   &__link {
     margin: $margin-md 0;
     display: inline-block;
+
+    &:hover {
+      color: $color-morado;
+    }
+
+    &:hover .flechas-proyectos__img {
+      display: none;
+    }
+
+    &:hover .flechas-proyectos__img--hover {
+      display: block;
+    }
   }
 
   &__texto {
     font-weight: 500;
+
     &--izq {
       text-align: right;
+    }
+  }
+
+  &__img {
+    display: block;
+
+    &--hover {
+      display: none;
     }
   }
 }

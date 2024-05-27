@@ -34,9 +34,11 @@ textarea {
   font-family: $tipografia-cuerpo;
   margin-top: $margin-sm;
 
-  &[type='checkbox'] {
+  &[type="checkbox"] {
     display: inline-block;
+    min-width: none;
     min-width: 20px;
+    height: 20px;
     accent-color: $color-morado;
   }
 
