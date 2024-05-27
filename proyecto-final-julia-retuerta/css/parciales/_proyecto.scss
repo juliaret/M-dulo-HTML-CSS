@@ -100,18 +100,6 @@
   margin-bottom: 30px;
 }
 
-/*FLECHA*/
-
-.flecha {
-  position: fixed;
-  bottom: 80px;
-  right: 30px;
-
-  &__icon {
-    font-size: $font-xxxl;
-  }
-}
-
 @media (min-width: 576px) {
 }
 

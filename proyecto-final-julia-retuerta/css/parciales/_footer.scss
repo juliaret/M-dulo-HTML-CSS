@@ -1,3 +1,15 @@
+/*FLECHA*/
+
+.flecha {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+
+  &__icon {
+    width: 50px;
+  }
+}
+
 .rrss {
   text-align: center;
 
@@ -28,6 +40,10 @@
 }
 
 @media (min-width: 768px) {
+  .flecha {
+    bottom: 80px;
+  }
+
   .footer {
     display: flex;
     flex-wrap: wrap;
