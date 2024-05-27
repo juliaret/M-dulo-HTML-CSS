@@ -11,7 +11,15 @@
 
   &__parrafo {
     font-weight: 400;
-    margin-bottom: $margin-md;
+    margin-bottom: $margin-xxl;
+  }
+}
+
+.formulario {
+  max-width: 600px;
+
+  &__seccion {
+    margin: $margin-lg 0;
   }
 }
 
@@ -24,6 +32,13 @@ textarea {
   padding: 10px;
   color: $color-morado;
   font-family: $tipografia-cuerpo;
+  margin-top: $margin-sm;
+
+  &[type='checkbox'] {
+    display: inline-block;
+    min-width: 20px;
+    accent-color: $color-morado;
+  }
 
   &::placeholder {
     color: $color-lila;
@@ -32,13 +47,42 @@ textarea {
 
   &:focus {
     outline: none;
-    border: 1px solid $color-lila;
+    border: 1px solid $color-morado;
   }
 }
 
 textarea {
+  width: 100%;
   min-height: 300px;
   border-radius: $border-radius-medium;
+}
+
+.boton {
+  text-align: right;
+}
+
+.btn {
+  background-color: $color-lila;
+  border: 2px solid $color-blanco;
+  color: $color-blanco;
+  font-weight: 500;
+  min-width: 150px;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid $color-morado;
+    color: $color-morado;
+  }
+}
+
+.rojo {
+  color: rgb(160, 0, 0);
+  margin-top: $margin-sm;
+}
+
+.borde-rojo {
+  border: 2px solid rgb(160, 0, 0);
 }
 
 @media (min-width: 576px) {
@@ -50,7 +94,7 @@ textarea {
   }
 
   textarea {
-    min-width: 500px;
+    max-width: 600px;
   }
 }
 
