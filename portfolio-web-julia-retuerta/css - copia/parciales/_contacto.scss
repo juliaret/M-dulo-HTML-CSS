@@ -1,0 +1,40 @@
+.contacto {
+  width: 85%;
+  margin: 80px auto 20px;
+
+  &__titulo {
+    font-family: $tipografia-titulares;
+    font-size: $font-super-xxxl;
+    font-weight: 500;
+    margin-bottom: $margin-md;
+  }
+
+  &__parrafo {
+    font-weight: 400;
+    margin-bottom: $margin-lg;
+  }
+
+  &__correo {
+    font-size: $font-md;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    width: 80%;
+    margin: 120px auto 0;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

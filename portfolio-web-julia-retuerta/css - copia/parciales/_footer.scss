@@ -1,0 +1,72 @@
+/*FLECHA*/
+
+.flecha {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+
+  &__icon {
+    width: 50px;
+  }
+}
+
+.rrss {
+  text-align: center;
+
+  &__link {
+    padding: 0 $padding-sm;
+  }
+
+  &__icon {
+    width: 36px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.footer {
+  padding: $padding-sm $padding-md;
+  margin-top: $margin-xl;
+
+  &__datos {
+    padding: $padding-sm $padding-md;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .flecha {
+    bottom: 80px;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .rrss {
+    position: fixed;
+    right: 0;
+    top: 200px;
+
+    &__link {
+      display: block;
+      padding: $padding-xs $padding-xl;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

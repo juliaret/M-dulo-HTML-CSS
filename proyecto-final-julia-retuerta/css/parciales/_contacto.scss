@@ -1,0 +1,111 @@
+.contacto {
+  width: 80%;
+  margin: 80px auto 60px;
+
+  &__titulo {
+    font-family: $tipografia-titulares;
+    font-size: $font-super-xxxl;
+    font-weight: 500;
+    margin-bottom: $margin-sm;
+  }
+
+  &__parrafo {
+    font-weight: 400;
+    margin-bottom: $margin-xxl;
+  }
+}
+
+.formulario {
+  max-width: 600px;
+
+  &__seccion {
+    margin: $margin-lg 0;
+  }
+}
+
+input,
+textarea {
+  display: block;
+  border: none;
+  border-radius: $border-radius-large;
+  min-width: 250px;
+  padding: $margin-md;
+  color: $color-morado;
+  font-family: $tipografia-cuerpo;
+  margin-top: $margin-sm;
+  font-size: $font-sm;
+
+  &[type="checkbox"] {
+    display: inline-block;
+    min-width: none;
+    min-width: 20px;
+    height: 20px;
+    accent-color: $color-morado;
+  }
+
+  &::placeholder {
+    color: $color-lila;
+    font-family: $tipografia-cuerpo;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $color-morado;
+  }
+}
+
+textarea {
+  width: 100%;
+  min-height: 300px;
+  border-radius: $border-radius-medium;
+}
+
+.boton {
+  text-align: right;
+}
+
+.btn {
+  background-color: $color-lila;
+  border: 2px solid $color-blanco;
+  color: $color-blanco;
+  font-weight: 500;
+  min-width: 150px;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid $color-morado;
+    color: $color-morado;
+  }
+}
+
+.rojo {
+  color: rgb(160, 0, 0);
+  margin-top: $margin-sm;
+}
+
+.borde-rojo {
+  border: 2px solid rgb(160, 0, 0);
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    margin: 120px auto 0;
+  }
+
+  textarea {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

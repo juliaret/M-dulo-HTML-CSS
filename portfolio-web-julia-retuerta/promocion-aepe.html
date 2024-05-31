@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promoción AEPE</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="shortcut icon" href="./media/images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="js/navegacion.js" defer></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__navbar">
+          <li class="nav__home">
+            <a class="nav__enlace" href="./index.html">INICIO</a>
+          </li>
+
+          <div class="mb-menu" id="hamburguesa">
+            <i class="bi bi-list barras"></i>
+          </div>
+
+          <div class="nav__menu">
+            <li class="nav__list">
+              <a class="nav__link nav__link--activo" id="desplegable" href="#"
+                >PROYECTOS <i class="bi bi-caret-down-fill flecha-menu"></i
+              ></a>
+
+              <ul class="nav__subnavbar">
+                <li class="nav__sublist">
+                  <a class="nav__sublink" href="./graphic-design.html">GRAPHIC DESIGN</a>
+                </li>
+                <li class="nav__sublist">
+                  <a class="nav__sublink" href="./motion-graphics.html">MOTION GRAPHICS</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__list">
+              <a class="nav__link" href="./sobre-mi.html">SOBRE MÍ</a>
+            </li>
+
+            <li class="nav__list">
+              <a class="nav__link" href="./contacto.html">CONTACTO</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <!--PROMOCIÓN AEPE-->
+    <!--FICHA-->
+    <section class="ficha">
+      <div class="principal">
+        <h2 class="principal__titulo">Promoción AEPE</h2>
+        <p class="principal__parrafo">
+          La Asociación Española de Pintores y Escultores (AEPE) me encargó realizar un vídeo promocional para darles a
+          conocer al público. Realicé el guion, escribí los textos y seleccioné los vídeos más apropiados para conseguir
+          un resultado dinámico, alegre y que despertara el interés de quienes lo vieran.
+        </p>
+      </div>
+
+      <div class="secundario">
+        <div class="secundario__contenido">
+          <h3 class="secundario__contenido__titulo">FECHA</h3>
+          <p class="secundario__contenido__texto">2020</p>
+        </div>
+
+        <div class="secundario__contenido">
+          <h3 class="secundario__contenido__titulo">CLIENTE</h3>
+          <p class="secundario__contenido__texto">AEPE</p>
+        </div>
+
+        <div class="secundario__contenido">
+          <h3 class="secundario__contenido__titulo">CATEGORÍAS</h3>
+          <p class="secundario__contenido__texto">Postproducción</p>
+          <p class="secundario__contenido__texto">Animación</p>
+        </div>
+      </div>
+    </section>
+
+    <!--TRABAJO-->
+    <section class="trabajo">
+      <video
+        class="video"
+        src="./media/video/promocion_aepe.mp4"
+        controls
+        poster="./media/images/portada-promocion-aepe.jpg"
+      ></video>
+    </section>
+
+    <!--FLECHA ANTERIOR Y SIGUIENTE PROYECTO-->
+    <section class="flechas-proyectos">
+      <a class="flechas-proyectos__link" href="./encuentro-submarino.html">
+        <p class="flechas-proyectos__texto flechas-proyectos__texto--izq">PROYECTO ANTERIOR</p>
+        <img class="flechas-proyectos__img" src="./media/images/flecha-anterior.png" alt="" />
+        <img
+          class="flechas-proyectos__img flechas-proyectos__img--hover"
+          src="./media/images/flecha-anterior-hover.png"
+          alt=""
+        />
+      </a>
+
+      <a class="flechas-proyectos__link" href="./56-premio-reina-sofia.html">
+        <p class="flechas-proyectos__texto">PROYECTO SIGUIENTE</p>
+        <img class="flechas-proyectos__img" src="./media/images/flecha-siguiente.png" alt="" />
+        <img
+          class="flechas-proyectos__img flechas-proyectos__img--hover"
+          src="./media/images/flecha-siguiente-hover.png"
+          alt=""
+        />
+      </a>
+    </section>
+
+    <!--FOOTER COMPLETO-->
+    <!--FLECHA SUBIR-->
+    <section class="flecha">
+      <a class="flecha__link" href="./promocion-aepe.html">
+        <img class="flecha__icon" src="./media/images/flecha.png" alt="" />
+      </a>
+    </section>
+
+    <!--RRSS-->
+    <section class="rrss">
+      <a class="rrss__link" href="https://www.linkedin.com/in/julia-retuerta-nogales/" target="_blank"
+        ><img class="rrss__icon" src="./media/images/logo-linkedin.png" alt=""
+      /></a>
+
+      <a class="rrss__link" href="https://www.behance.net/juliaretuertanogales" target="_blank"
+        ><img class="rrss__icon" src="./media/images/logo-behance.png" alt=""
+      /></a>
+
+      <a class="rrss__link" href="https://vimeo.com/juliaretuertanogales" target="_blank"
+        ><img class="rrss__icon" src="./media/images/logo-vimeo.png" alt=""
+      /></a>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <p class="footer__datos">© Designed and developed by Julia Retuerta</p>
+      <p class="footer__datos">2024</p>
+      <a class="footer__datos" href="mailto:juliaretuertadesign@gmail.com">juliaretuertadesign@gmail.com</a>
+    </footer>
+  </body>
+</html>
